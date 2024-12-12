@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Bank1 {
 
     int accno;
-    String name; double balance;
+    String name; 
+    double balance;
 
     void getDetails(int bid, String bnm, double bal)
     {
