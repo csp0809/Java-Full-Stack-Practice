@@ -1,0 +1,118 @@
+Web Development
+
+16 December 2024
+Introduction to Web Development.
+Types of applications 
+1 Desktop
+2 Web
+3 Mobile
+
+Front end:
+HTML (Structure)
+CSS (Looks)
+JAVA Script (Behavior)
+Angular
+React
+Bootstrap
+
+Backend (Server)
+Language & Database
+Java
+C#
+Python
+Php
+
+HTML
+Note: It is common practice that All the visible data should go into body only and No visible data should be entered into the head tag.
+•	The <!DOCTYPE html> declaration defines that this document is an HTML5 document
+•	The <html> element is the root element of an HTML page
+•	The <head> element contains meta information about the HTML page
+•	The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+•	The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+
+Tags
+An HTML element is defined by a start tag, some content, and an end tag:
+Syntax
+Pair tags
+<tagname> Content </tagname>
+Requires open and close 
+
+<tagname>
+Standalone and does not require close
+1.	Heading element/tag/content/: h1-h6   <h1>……</h1>
+2.	Paragraph <p>……</p>
+3.	<br> line break </br>
+4.	<hr> Horizontal Line </hr>
+Example 1:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags</title>
+</head>
+<body>
+    <h1>WELCOME</h1>
+    <h2>WELCOME</h2>
+    <h3>WELCOME</h3>
+    <h4>WELCOME</h4>
+    <h5>WELCOME</h5>
+    <h6>WELCOME</h6>
+
+    <hr>
+    <p>
+        WELCOME TO MUMBAI. <br>Have A Great Day
+    </p>
+    <hr>
+    <p>
+        WELCOME TO MUMBAI. Have A Great Day
+    </p>
+</body>
+</html>
+
+Text Formatting Elements
+
+1.	<b> - Bold text
+2.	<i> - Italic text
+3.	<u> underlined text
+4.	<small>small text
+5.	<sub> - Subscript text
+6.	<sup> - Superscript text
+7.	<strong> - Important text
+8.	<em> - Emphasized text
+9.	<ins> inserted text (___)
+10.	<del>deleted text (“hi” will be shown as crossed out)
+
+EX:
+<html>
+<head>
+    <title>Formating</title> 
+    <!--  -->
+    <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+   
+     <h3> Text Formating </h3>
+     
+   
+            <p> <b>HTML is the standard markup language for Web pages.</b> </p>
+            <p> <i>HTML is the standard markup language for Web pages.</i> </p>
+            <p> <u>HTML is the standard markup language for Web pages.</u> </p>
+            <hr>
+            <p> HTML is the <small>standard markup language</small> for Web pages.</p>
+            <p> HTML is the <ins>standard markup language</ins> for Web pages.</p>
+            <p> HTML is the <del>standard markup language</del> for Web pages.</p>
+            <p> X<sup>2</sup></p>
+            <br>
+            <p>X<sub>2</sub></p>
+            <p><strong>HTML is the standard markup language for Web pages.</strong> </p>
+            <p><em>HTML is the standard markup language for Web pages.</em></p> 
+          
+            
+</body>
+</html>
+
