@@ -5,7 +5,8 @@ public class FileReader1 {
         int i;
         while ((i=fr.read())!=-1) {
             System.out.println((char)i);
-        fr.close();
+        
         }
+        fr.close();//need to close after the loop 
     }
 }
