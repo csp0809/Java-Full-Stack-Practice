@@ -1,3 +1,5 @@
+Web Development > HTML
+
 Web Development
 
 16 December 2024
@@ -113,6 +115,100 @@ EX:
             <p><em>HTML is the standard markup language for Web pages.</em></p> 
           
             
+</body>
+</html>
+
+
+Day 2: 18/12/24
+HTML Links:
+HTML Links - Hyperlinks
+HTML links are hyperlinks.
+You can click on a link and jump to another document.
+When you move the mouse over a link, the mouse arrow will turn into a little hand.
+Note: A link does not have to be text. A link can be an image or any other HTML element!
+
+HTML Links - Syntax
+The HTML <a> tag defines a hyperlink. It has the following syntax:
+<a href="url">link text</a>
+
+EX:
+<a href="https://www.google.co.in/" target="_blank">google</a>
+    <!-- // here href is hyperlink reference where we provide links to another page.
+    //and target is an attribute which is use to specify whether the link will open in same tab or a new tab  -->
+    <a href="Basic.html">CLick_me</a>
+    <!-- to open another file in the same folder -->
+    
+    <img src="pngtree-smile-dog-on-white-background-png-image_9160783.png" alt="img" width="100px">
+    <!-- opens image located in same folder, alt shows text contained within "" if there is an issue with the image -->
+    <img src="images/pexels-kowalievska-1170986.jpg" alt="" width="100px">
+    <!-- to display image in a sub folder -->
+    <img src="../Day1/pexels-george-desipris-792381.jpg" alt="" width="100px">
+    <!-- to display image in parent folders -->
+    <img src="C:/image/X9Npn_1559738818.jpg" alt="" width="100px">
+    <!-- to display image with path, sometimes it may not show this image in 
+    such case we will have to go to original code file inside folder and run it from there  -->
+
+Lists
+<ul>	Defines an unordered list
+<ol>	Defines an ordered list
+<li>	Defines a list item
+<dl>	Defines a description list
+<dt>	Defines a term in a description list
+<dd>	Describes the term in a description list
+
+    EX:
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+</head>
+<body>
+    <ol type="i">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+        <li>BOOTSTRAP</li>
+    </ol>
+    <!-- ol: ordered list and type attribute is used to provide order (by default it is 1 i.e will give numbers)
+     i.e A:A,B,C,D 
+     i(for smallcase roman):i,ii,iii  I(for Uppercase roman:I,III etc)
+     li: list item -->
+
+    <ul type="Square">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+        <li>BOOTSTRAP</li>
+    </ul>
+    <!-- ul: unordered list, type here gives sybols like circle,square, by default it is disk -->
+
+    <dl>
+        <dt>Python</dt>
+        <dd>A general purpose language</dd>
+
+        <dt>HTML</dt>
+        <dd>Hypertext markup language</dd>
+    </dl>
+    <!-- dl:Defines a description list
+    dt: Defines a term in a description list
+    dd: Describes the term in a description list
+ -->
+
+ <!-- Nested list -->
+ <ol type="i">
+    <li>HTML</li>
+    <ol type="A">
+        <li>Web Application</li>
+        <li>Desktop Application</li>
+        <li>Mobile Application</li>
+    </ol>
+    <li>CSS</li>
+    <li>JAVASCRIPT</li>
+    <li>BOOTSTRAP</li>
+</ol>
 </body>
 </html>
 
