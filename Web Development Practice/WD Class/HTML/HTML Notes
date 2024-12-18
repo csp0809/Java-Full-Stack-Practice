@@ -156,6 +156,7 @@ Lists
 <dt>	Defines a term in a description list
 <dd>	Describes the term in a description list
 
+    EX:
 <!DOCTYPE html>
 <html lang="en">
 <head>
