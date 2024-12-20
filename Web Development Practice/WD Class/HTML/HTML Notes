@@ -211,3 +211,175 @@ Lists
 </body>
 </html>
 
+
+Day3 20/12/24
+Tables:
+HTML tables allow web developers to arrange data into rows and columns.
+Tag	Description
+<table>
+Defines a table
+<th>
+Defines a header cell in a table
+<tr>
+Defines a row in a table
+<td>
+Defines a cell in a table
+<caption>
+Defines a table caption
+<colgroup>
+Specifies a group of one or more columns in a table for formatting
+<col>
+Specifies column properties for each column within a <colgroup> element
+<thead>
+Groups the header content in a table
+<tbody>
+Groups the body content in a table
+<tfoot>
+Groups the footer content in a table
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table </title>
+</head>
+<body>
+    <table border="1" width="75%">
+        <!-- if we dont define border the table 
+         will be created wtihout any border 
+        if we dont define  width it will only take 
+        required width-->
+        <caption><b>Employee Details/ Verticle Table</b></caption>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Chaitanya</td>
+            <td>Ghatkopar</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Pritik</td>
+            <td>Kharghar</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Chait</td>
+            <td>Mumbai</td>
+        </tr>
+        <tr>
+            <td>104</td>
+            <td>Prem</td>
+            <td>Navi Mumbai</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+
+    <table border="2">
+        <caption><b>Horizontal Table</b></caption>
+    <tr>
+        <th>ID</th>
+        <td>101</td>
+        <td>102</td>
+        <td>103</td>
+        <td>104</td>
+    </tr>
+    <tr>
+        <th>Name</th>
+        <td>Chaitanya</td>
+        <td>Prem</td>
+        <td>Pritik</td>
+        <td>Chait</td>
+    </tr>
+
+    <tr>
+        <th>City</th>
+        <td>Mumbai</td>
+        <td>Navi Mumbai</td>
+        <td>Kharghar</td>
+        <td>Ghatkopar</td>
+    </tr>
+    </table>
+<br>
+    <table border="2" width="25%">
+        <caption><b>Horizontal Table Column merge</b></caption>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th colspan="2">Phone</th>
+            <!-- colspan is used to merge columns -->
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Chait</td>
+            <td>8451086652</td>
+            <td>8108425639</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>GIT</td>
+            <td>8888602638</td>
+            <td>8108425639</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Prem</td>
+            <td>8888888877</td>
+            <td>8888845108</td>
+        </tr>
+    </table>
+
+    <br>
+    <img src="/Day3/images.png" width="200">
+    <table border="2">
+        <caption><b>Horizontal Table row merge</b></caption>
+    <tr>
+        <th>ID</th>
+        <td>101</td>
+        <td>102</td>
+        <td>103</td>
+        <td>104</td>
+    </tr>
+    <tr>
+        <th>Name</th>
+        <td>Chaitanya</td>
+        <td>Prem</td>
+        <td>Pritik</td>
+        <td>Chait</td>
+    </tr>
+
+    <tr>
+        <th rowspan="2">City</th>
+         <!-- rowspan is used to merge columns -->
+        <td>Mumbai</td>
+        <td>Navi Mumbai</td>
+        <td>Kharghar</td>
+        <td>Ghatkopar</td>
+    </tr>
+    <tr>
+        <td>Mumbai</td>
+        <td>Navi Mumbai</td>
+        <td>Kharghar</td>
+        <td>Ghatkopar</td>
+    </tr>
+
+    </table>
+
+    <br>
+    <video width="300px" muted controls autoplay>
+        <source src="/Day3/6394054-uhd_4096_2048_24fps.mp4">
+    </video>
+    <!-- muted and autoplay is required if you want to play video when page loads, without muted video/audio wont autoplay  -->
+    <audio src="/Day3/nature-investigation-255161.mp3" muted controls autoplay></audio>
+    <br>
+    <iframe src="index.html" frameborder="0"></iframe>
+    <!-- iframe is used to display page within page -->
+</body>
+</html>
+
