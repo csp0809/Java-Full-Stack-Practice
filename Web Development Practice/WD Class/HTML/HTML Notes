@@ -532,6 +532,44 @@ Form Example 2:
         </fieldset>
         <fieldset>
             <legend>Academics</legend>
+            <table>
+                <tr>
+                    <td><label for="">Highest Education</label></td>
+                    <!-- <td><select name="Highest Education" id="">
+                        <option value="">Masters</option>
+                        <option value="">Bacholers</option>
+                        <option value="">HSC</option>
+                        <option value="">SSC</option>
+                    </select></td> -->
+                    <td><input list="Highest Education">
+                    <datalist id="Highest Education">
+                        <option value="Masters">
+                            <option value="Bacholers">
+                            <option value="HSC">
+                            <option value="SSC">
+                    </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">College Name</label></td>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="">Percentage</label></td>
+                    <td><input type="number" name="" id=""></td>
+                    
+                </tr>
+                <tr>
+                    <td><label for="">College Address</label></td>
+                    <td><textarea name="Addr" rows="" cols="20" id=""></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="">Certifications</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr><td><input type="submit" name="" id=""></td>
+                    <td><input type="reset" value="cancel"></td></tr>
+            </table>
         </fieldset>
     </form>
 </body>
