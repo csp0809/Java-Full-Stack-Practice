@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+        /* .box::first-line{
+            color: yellow;
+        } */
+         /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+         }
+         p, a, .box, [data-color="primary"]{
+            margin-top: 45px;
+         } */
+        /* .box:nth-child(even){
+            background-color: blue;
+            will apply on nth even child 
+        } */
+        /* .box:nth-last-child(1){
+            background-color: red;
+            will apply on nth child from 
+            bottom/last position 
+        } */
+        .boxes::before{
+            content: "Git is Good ";
+            color: blue;
+        }
+        .boxes::after{
+            content: "Chaitya is also Good ";
+            color: red;
+        }
+        ::selection{
+            background-color: black;
+            color: aqua;
+        }
+        .box::first-letter{
+            color: peru;
+            font-size: 45px;
+        }
+        input::placeholder{
+            color: rgb(141, 141, 214);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes"> 
+        <div data-color="primary" class="box">Hey I am a Box</div>
+        <div class="box">Hey I am a Box</div>
+        <div class="box">Hey I am a Box</div>
+        <input type="text" name="" id="" placeholder="Type your Name Here">
+    </div>
+</body>
+</html>

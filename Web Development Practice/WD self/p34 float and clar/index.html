@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    <!-- this was used in earlier days and not usually used in mordern websites -->
+    <style>
+        .cards{
+            border: 2px solid black ;
+            display: flow-root;
+        }
+        img{
+            float: right;
+            /* image will float on right and content will be shown on its left side */
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            clear:both;
+            /* nth-child in this case 3rd will have "clear" on both sides that is nothing(no image) will be allowed on its both sides.*/
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://www.shutterstock.com/shutterstock/photos/2469950577/display_1500/stock-photo-man-fishing-from-canoe-on-the-lake-copy-space-2469950577.jpg" alt="" width="250px">
+        <div class="card">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore quisquam fugit nemo quod molestiae autem alias sequi repellendus officiis, deleniti perspiciatis. Id velit iusto voluptate maxime voluptatum quo accusamus a pariatur corporis, sed architecto?
+        </div>
+        <div class="card">card 2</div> 
+        <div class="card">card 3</div>
+    </div>
+</body>
+</html>
