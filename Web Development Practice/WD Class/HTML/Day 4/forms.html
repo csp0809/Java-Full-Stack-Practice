@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Personal</legend>
+            Name: <input type="text"><br>
+            Gender: <input type="radio" value="Male" name="Gender">Male
+            <input type="radio" value="Female" name="Gender">Female <br>
+            Hobbies: <input type="checkbox" name="Reading" value="Reading">Reading
+            <input type="checkbox" name="Writing" value="Writing">Writing <br>
+            State: <select name="State" >
+                <option value="">MH</option>
+                <option value="">MP</option>
+                <option value="">UP</option>
+                <option value="">Goa</option>
+            </select><br>
+            City: <input list="city">
+            <datalist id="city">
+                <option value="Pune">
+                    <option value="Mumbai">
+                        <option value="Alibag">
+
+            </datalist><br>
+
+        </fieldset>
+        <fieldset>
+            Color: <input type="color" name="" id=""><br>
+            Date: <input type="date" name="" id=""><br>
+            Time: <input type="month"><br>
+            email: <input type="email" name="" id=""><br>
+            Password: <input type="password" name="" id=""><br>
+            Photo: <input type="image" src="/Day 1/pexels-george-desipris-792381.jpg" width="150px"><br>
+            Age: <input type="number" name="" id=""><br>
+            Salary Package: 5000 <input type="range" min="5000" max="50000">50000 <br>
+            Google: <input type="search" name="" id=""><br>
+            Phone: <input type="tel" name="" id=""><br>
+            Web site: <input type="url" name="" id=""><br>
+            Week: <input type="week" name="" id=""><br>
+            Address: <textarea rows="8" cols="30"></textarea><br>
+
+            <input type="submit"><br>
+            <input type="reset" name="" id="">
+        </fieldset>
+    </form>
+</body>
+</html>
