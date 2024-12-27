@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container{
+            background-color: skyblue;
+            width: 30vw;
+            height: 80vh;
+        }
+        .box{
+            /* NOTE: for simple property use transition and for complex properties use animations. */
+            background-color: palevioletred;
+            width: 34px;
+            height: 45px;
+            /* animation-name: myAnimation;
+            animation-duration: 3s;
+            animation-iteration-count: 3; */
+            /* animation-timing-function: ease-out; */
+            /* animation-timing-function: cubic-bezier(0, 0, 0, 0.95); */
+            /* animation-delay: 1s; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-play-state: paused; */
+            /* state of animations ex: running/paused */
+            /* find more at "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration" */
+
+            /* all in one line */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: myAnimation 3s ease-in 1s 1 alternate,
+                        my2 4s ease-in-out 1s 1;
+        }
+        @keyframes myAnimation{
+            from{
+                background-color: blueviolet;
+            }
+            to{
+                background-color: yellowgreen;
+                transform: translatex(500px);
+                
+            }
+        }
+        @keyframes my2{
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(250deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            BOX
+        </div>
+    </div>
+</body>
+</html>
