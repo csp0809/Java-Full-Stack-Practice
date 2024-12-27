@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        .container{
+            background-color: peachpuff;
+            width: 50vw;
+            height: 40vh;
+        }
+
+        .box{
+            background-color: palevioletred;
+            width: 5vw;
+            height: 4vh;
+            /* transition-property: transform;
+            transition-duration: 3s; */
+            /* how long the transition will last */
+            /* transition-timing-function: ease-in-out; */
+            /* timing functions decide speed of transition
+            at the start middle and end*/
+            transition-delay: 1s;
+            /* delay between click and execution */
+
+            transition: all 3s ease-in-out 1s;
+            /* all above functions combined in single line 
+            check "https://developer.mozilla.org/en-US/docs/Web/CSS/transition"
+            for more details.*/
+        }
+        .translate{
+            transform: translateX(10vw) translateY(10vh);
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+</html>
