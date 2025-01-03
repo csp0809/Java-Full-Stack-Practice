@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selectors</title>
+    <Style>
+        /* Element Selector */
+        /* div{
+            background-color: red;
+        } */
+
+        /* Class Selector */
+        .red{
+            background-color: red;
+        }
+        
+        /* ID Selector */
+        #green{
+            background-color:blueviolet ;
+        }
+
+        /* Child Selectoor = only applies if it is directly inside
+        a div in below case div > article > para therefore it wont work.
+        it will work only in case of div > child i.e para or other
+        specified object */
+        div > p{
+            color: yellow;
+            background-color: purple;
+        }
+
+        /* Descendant Selector */
+        div  p{
+            color: yellow;
+            background-color: purple;
+        }
+
+        /*Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        /* changes color of visited link */
+        a:visited{ 
+            color: black;
+        }
+
+        /* color of link not visited yet */
+        a:link{
+            color: green;
+        }
+
+        /* Changes color/ background
+        color while clicking */
+        a:active{
+            /* color: aqua; */
+            background-color: aqua;
+        }
+
+        /* Changes color/ background
+        color when hovering */
+        a:hover{
+            background-color: blue;
+        }
+
+        /* changes color where p is a first child */
+        p:first-child{
+            background-color: aqua;
+        }
+    </Style>
+</head>
+<body>
+    <div class="one">
+        <p>Im first</p>
+        <p>Im second</p>
+    </div>
+    <div class="red">
+        I am a Div 
+        <article>
+            <p>I am a para inside the div</p>
+        </article>
+    </div>
+    <div id="green">
+        I am another Div 
+    </div>
+    <a href="http://google.com" >Go To Google</a>
+    <div>
+        <a href="http://facebook.com" >Go To FB</a>
+    </div>
+</body>
+</html>
