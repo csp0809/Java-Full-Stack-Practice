@@ -207,7 +207,7 @@ Lists
 </html>
 
 
-Day3 20/12/24
+Day 3 20/12/24
 Tables:
 HTML tables allow web developers to arrange data into rows and columns.
 Tag	Description
@@ -379,7 +379,7 @@ Groups the footer content in a table
 </html>
 
 
-Day4 23/12/24
+Day 4 23/12/24
 Forms:
 An HTML form is used to collect user input. The user input is most often sent to a server for processing.
 
@@ -532,6 +532,16 @@ Form Example 2:
         </fieldset>
         <fieldset>
             <legend>Academics</legend>
+        </fieldset>
+    </form>
+</body>
+</html>
+
+We have to complete the Academics part in this one
+
+
+<fieldset>
+            <legend>Academics</legend>
             <table>
                 <tr>
                     <td><label for="">Highest Education</label></td>
@@ -571,12 +581,107 @@ Form Example 2:
                     <td><input type="reset" value="cancel"></td></tr>
             </table>
         </fieldset>
+Insert above code in academics fieldset
+Day 5 03/01/2025
+
+Assignment
+Sign Up form
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        /* Ensure inputs and textarea fill the full width of their table cell */
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            box-sizing: border-box; /* Includes padding and borders in width */
+        }
+    </style>
+</head>
+<body>
+    <h1>Website Design Form</h1>
+    <form method="get">
+        <fieldset>
+            <table>
+                <tr>
+                    <td><label for="Full Name">Full Name</label></td>
+                    <td><input type="text" name="fname" placeholder="First Name"></td>
+                    <td><input type="text" name="lname" placeholder="Last Name"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td colspan="2"><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Phone">Phone Number</label></td>
+                    <td><input type="text" placeholder="+ Area code"></td>
+                    <td><input type="text" name="phone" placeholder="Phone Number"></td>
+                </tr>
+                <tr>
+                    <td><label for="company">Company:</label></td>
+                    <td colspan="2"><input type="text" id="company" name="company" placeholder="Company Name"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Type Of Business</label></td>
+                    <td><input type="checkbox" name="Technology" value="Technology">Technology</td>
+                    <td><input type="checkbox" name="Food" value="Food">Food</td>
+                    <td><input type="checkbox" name="Beauty" value="Beauty">Beauty</td>
+                    <td><input type="checkbox" name="Finance" value="Finance">Finance</td>
+                </tr>
+                <tr>
+                    <td><label for="">Type Of Website You Need</label></td>
+                    <td><input type="checkbox" name="Personal" id="" value="Personal">Personal</td>
+                    <td><input type="checkbox" name="Educational" id="" value="Educational">Educational</td>
+                    <td><input type="checkbox" name="Sport" id="" value="Sport">Sport</td>
+                    <td><input type="checkbox" name="Food" id="" value="Food">Food</td>
+                    
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="Local Business" id="" value="Local Business">Local Business</td>
+                    <td><input type="checkbox" name="Small Business" id="" value="Small Business">Small Business</td>
+                    <td><input type="checkbox" name="Medium Business" id="" value="Medium Business">Medium Business</td>
+                </tr>
+                <tr>
+                    <td><label for="">Navigation Bar Items</label></td>
+                    <td><input type="checkbox" name="About" id="" value="About">About</td>
+                    <td><input type="checkbox" name="FAQ" id="" value="FAQ">FAQ</td>
+                    <td><input type="checkbox" name="User Guide" id="" value="User Guide">User Guide</td>
+                </tr>
+                <tr>
+                    <td><label for=""></label></td>
+                    <td><input type="checkbox" name="Forum" id="" value="Forum">Forum</td>
+                    <td><input type="checkbox" name="Blog" id="" value="Blog">Blog</td>
+                    <td><input type="checkbox" name="Pricing" id="" value="Pricing">Pricing</td>
+                </tr>
+                <tr>
+                <tr>
+                    <td><label for="">More Items:</label></td>
+                    <td colspan="2"><input type="text" name="moreItems" placeholder="Additional items"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Additional Services</label></td>
+                    <td><input type="checkbox" name="Banner Design" id="" value="Banner Design">Banner Design</td>
+                    <td><input type="checkbox" name="SEO" id="" value="SEO">SEO</td>
+                    <td><input type="checkbox" name="Landing Page Design" id="" value="Landing Page Design">Landing Page Design</td>
+                </tr>
+                <tr>
+                    <td><label for=""></label></td>
+                    <td><input type="checkbox" name="Video" id="" value="Video">Video</td>
+                    <td><input type="checkbox" name="Analytics" id="" value="Analytics">Analytics</td>
+                    <td><input type="checkbox" name="Adevertisement Management" id="" value="Adevertisement Management">Adevertisement Management</td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Additional Comments:</label></td>
+                    <td colspan="2"><textarea name="comments" rows="7" placeholder="Enter your comments"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
     </form>
 </body>
 </html>
-
-We have to complete the Academics part in this one
-
-
-
 
