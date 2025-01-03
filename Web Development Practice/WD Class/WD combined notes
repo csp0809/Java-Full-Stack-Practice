@@ -1,5 +1,3 @@
-Web Development > HTML
-
 Web Development
 
 16 December 2024
@@ -84,7 +82,6 @@ Text Formatting Elements
 8.	<em> - Emphasized text
 9.	<ins> inserted text (___)
 10.	<del>deleted text (“hi” will be shown as crossed out)
-
 EX:
 <html>
 <head>
@@ -117,7 +114,6 @@ EX:
             
 </body>
 </html>
-
 
 Day 2: 18/12/24
 HTML Links:
@@ -156,8 +152,6 @@ Lists
 <dt>	Defines a term in a description list
 <dd>	Describes the term in a description list
 
-    EX:
-    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -209,6 +203,485 @@ Lists
     <li>JAVASCRIPT</li>
     <li>BOOTSTRAP</li>
 </ol>
+</body>
+</html>
+
+
+Day 3 20/12/24
+Tables:
+HTML tables allow web developers to arrange data into rows and columns.
+Tag	Description
+<table>
+Defines a table
+<th>
+Defines a header cell in a table
+<tr>
+Defines a row in a table
+<td>
+Defines a cell in a table
+<caption>
+Defines a table caption
+<colgroup>
+Specifies a group of one or more columns in a table for formatting
+<col>
+Specifies column properties for each column within a <colgroup> element
+<thead>
+Groups the header content in a table
+<tbody>
+Groups the body content in a table
+<tfoot>
+Groups the footer content in a table
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table </title>
+</head>
+<body>
+    <table border="1" width="75%">
+        <!-- if we dont define border the table 
+         will be created wtihout any border 
+        if we dont define  width it will only take 
+        required width-->
+        <caption><b>Employee Details/ Verticle Table</b></caption>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Chaitanya</td>
+            <td>Ghatkopar</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Pritik</td>
+            <td>Kharghar</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Chait</td>
+            <td>Mumbai</td>
+        </tr>
+        <tr>
+            <td>104</td>
+            <td>Prem</td>
+            <td>Navi Mumbai</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+
+    <table border="2">
+        <caption><b>Horizontal Table</b></caption>
+    <tr>
+        <th>ID</th>
+        <td>101</td>
+        <td>102</td>
+        <td>103</td>
+        <td>104</td>
+    </tr>
+    <tr>
+        <th>Name</th>
+        <td>Chaitanya</td>
+        <td>Prem</td>
+        <td>Pritik</td>
+        <td>Chait</td>
+    </tr>
+
+    <tr>
+        <th>City</th>
+        <td>Mumbai</td>
+        <td>Navi Mumbai</td>
+        <td>Kharghar</td>
+        <td>Ghatkopar</td>
+    </tr>
+    </table>
+<br>
+    <table border="2" width="25%">
+        <caption><b>Horizontal Table Column merge</b></caption>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th colspan="2">Phone</th>
+            <!-- colspan is used to merge columns -->
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Chait</td>
+            <td>8451086652</td>
+            <td>8108425639</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>GIT</td>
+            <td>8888602638</td>
+            <td>8108425639</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Prem</td>
+            <td>8888888877</td>
+            <td>8888845108</td>
+        </tr>
+    </table>
+
+    <br>
+    <img src="/Day3/images.png" width="200">
+    <table border="2">
+        <caption><b>Horizontal Table row merge</b></caption>
+    <tr>
+        <th>ID</th>
+        <td>101</td>
+        <td>102</td>
+        <td>103</td>
+        <td>104</td>
+    </tr>
+    <tr>
+        <th>Name</th>
+        <td>Chaitanya</td>
+        <td>Prem</td>
+        <td>Pritik</td>
+        <td>Chait</td>
+    </tr>
+
+    <tr>
+        <th rowspan="2">City</th>
+         <!-- rowspan is used to merge columns -->
+        <td>Mumbai</td>
+        <td>Navi Mumbai</td>
+        <td>Kharghar</td>
+        <td>Ghatkopar</td>
+    </tr>
+    <tr>
+        <td>Mumbai</td>
+        <td>Navi Mumbai</td>
+        <td>Kharghar</td>
+        <td>Ghatkopar</td>
+    </tr>
+
+    </table>
+
+    <br>
+    <video width="300px" muted controls autoplay>
+        <source src="/Day3/6394054-uhd_4096_2048_24fps.mp4">
+    </video>
+    <!-- muted and autoplay is required if you want to play video when page loads, without muted video/audio wont autoplay  -->
+    <audio src="/Day3/nature-investigation-255161.mp3" muted controls autoplay></audio>
+    <br>
+    <iframe src="index.html" frameborder="0"></iframe>
+    <!-- iframe is used to display page within page -->
+</body>
+</html>
+
+
+Day 4 23/12/24
+Forms:
+An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+
+The Action Attribute
+The action attribute defines the action to be performed when the form is submitted.
+Usually, the form data is sent to a file on the server when the user clicks on the submit button.
+
+The Method Attribute
+The method attribute specifies the HTTP method to be used when submitting the form data.
+
+Notes on GET:
+Appends the form data to the URL, in name/value pairs
+NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)
+The length of a URL is limited (2048 characters)
+Useful for form submissions where a user wants to bookmark the result
+GET is good for non-secure data, like query strings in Google
+
+
+Notes on POST:
+Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)
+POST has no size limitations, and can be used to send large amounts of data.
+Form submissions with POST cannot be bookmarked
+Tip: Always use POST if the form data contains sensitive or personal information!
+
+The HTML <form> Elements
+The HTML <form> element can contain one or more of the following form elements:
+•	<input>
+•	<label>
+•	<select>
+•	<textarea>
+•	<button>
+•	<fieldset>
+•	<legend>
+•	<datalist>
+•	<output>
+•	<option>
+•	<optgroup>
+HTML Input Types
+Here are the different input types you can use in HTML:
+•	<input type="button">
+•	<input type="checkbox">
+•	<input type="color">
+•	<input type="date">
+•	<input type="datetime-local">
+•	<input type="email">
+•	<input type="file">
+•	<input type="hidden">
+•	<input type="image">
+•	<input type="month">
+•	<input type="number">
+•	<input type="password">
+•	<input type="radio">
+•	<input type="range">
+•	<input type="reset">
+•	<input type="search">
+•	<input type="submit">
+•	<input type="tel">
+•	<input type="text">
+•	<input type="time">
+•	<input type="url">
+•	<input type="week">
+Form example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Personal</legend>
+            Name: <input type="text"><br>
+            Gender: <input type="radio" value="Male" name="Gender">Male
+            <input type="radio" value="Female" name="Gender">Female <br>
+            Hobbies: <input type="checkbox" name="Reading" value="Reading">Reading
+            <input type="checkbox" name="Writing" value="Writing">Writing <br>
+            State: <select name="State" >
+                <option value="">MH</option>
+                <option value="">MP</option>
+                <option value="">UP</option>
+                <option value="">Goa</option>
+            </select><br>
+            City: <input list="city">
+            <datalist id="city">
+                <option value="Pune">
+                    <option value="Mumbai">
+                        <option value="Alibag">
+
+            </datalist><br>
+
+        </fieldset>
+        <fieldset>
+            Color: <input type="color" name="" id=""><br>
+            Date: <input type="date" name="" id=""><br>
+            Time: <input type="month"><br>
+            email: <input type="email" name="" id=""><br>
+            Password: <input type="password" name="" id=""><br>
+            Photo: <input type="image" src="/Day 1/pexels-george-desipris-792381.jpg" width="150px"><br>
+            Age: <input type="number" name="" id=""><br>
+            Salary Package: 5000 <input type="range" min="5000" max="50000">50000 <br>
+            Google: <input type="search" name="" id=""><br>
+            Phone: <input type="tel" name="" id=""><br>
+            Web site: <input type="url" name="" id=""><br>
+            Week: <input type="week" name="" id=""><br>
+            Address: <textarea rows="8" cols="30"></textarea><br>
+
+            <input type="submit"><br>
+            <input type="reset" name="" id="">
+        </fieldset>
+    </form>
+</body>
+</html>
+
+Form Example 2:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form table</title>
+</head>
+<body>
+    <form method="get">
+        <fieldset>
+            <legend>Personal Info</legend>
+            <table>
+                <tr>
+                    <td><label for="">Full Name</label></td>
+                    <td><input type="text" name="fname" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="">Address</label></td>
+                    <td><textarea name="Addr" rows="7" cols="20" id=""></textarea></td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td><input type="number" name="age" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="">Hobbies</label></td>
+                    <td><input type="checkbox" name="reading" value="Reading">Reading
+                    <input type="checkbox" name="Writing" value="Writing" id="">Writing</td>
+                </tr>
+                <tr><td><input type="submit" name="" id=""></td>
+                <td><input type="reset" value="cancel"></td></tr>
+            </table>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Academics</legend>
+        </fieldset>
+    </form>
+</body>
+</html>
+
+We have to complete the Academics part in this one
+
+
+<fieldset>
+            <legend>Academics</legend>
+            <table>
+                <tr>
+                    <td><label for="">Highest Education</label></td>
+                    <!-- <td><select name="Highest Education" id="">
+                        <option value="">Masters</option>
+                        <option value="">Bacholers</option>
+                        <option value="">HSC</option>
+                        <option value="">SSC</option>
+                    </select></td> -->
+                    <td><input list="Highest Education">
+                    <datalist id="Highest Education">
+                        <option value="Masters">
+                            <option value="Bacholers">
+                            <option value="HSC">
+                            <option value="SSC">
+                    </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">College Name</label></td>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="">Percentage</label></td>
+                    <td><input type="number" name="" id=""></td>
+                    
+                </tr>
+                <tr>
+                    <td><label for="">College Address</label></td>
+                    <td><textarea name="Addr" rows="" cols="20" id=""></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="">Certifications</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr><td><input type="submit" name="" id=""></td>
+                    <td><input type="reset" value="cancel"></td></tr>
+            </table>
+        </fieldset>
+Insert above code in academics fieldset
+Day 5 03/01/2025
+
+Assignment
+Sign Up form
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        /* Ensure inputs and textarea fill the full width of their table cell */
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            box-sizing: border-box; /* Includes padding and borders in width */
+        }
+    </style>
+</head>
+<body>
+    <h1>Website Design Form</h1>
+    <form method="get">
+        <fieldset>
+            <table>
+                <tr>
+                    <td><label for="Full Name">Full Name</label></td>
+                    <td><input type="text" name="fname" placeholder="First Name"></td>
+                    <td><input type="text" name="lname" placeholder="Last Name"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td colspan="2"><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Phone">Phone Number</label></td>
+                    <td><input type="text" placeholder="+ Area code"></td>
+                    <td><input type="text" name="phone" placeholder="Phone Number"></td>
+                </tr>
+                <tr>
+                    <td><label for="company">Company:</label></td>
+                    <td colspan="2"><input type="text" id="company" name="company" placeholder="Company Name"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Type Of Business</label></td>
+                    <td><input type="checkbox" name="Technology" value="Technology">Technology</td>
+                    <td><input type="checkbox" name="Food" value="Food">Food</td>
+                    <td><input type="checkbox" name="Beauty" value="Beauty">Beauty</td>
+                    <td><input type="checkbox" name="Finance" value="Finance">Finance</td>
+                </tr>
+                <tr>
+                    <td><label for="">Type Of Website You Need</label></td>
+                    <td><input type="checkbox" name="Personal" id="" value="Personal">Personal</td>
+                    <td><input type="checkbox" name="Educational" id="" value="Educational">Educational</td>
+                    <td><input type="checkbox" name="Sport" id="" value="Sport">Sport</td>
+                    <td><input type="checkbox" name="Food" id="" value="Food">Food</td>
+                    
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="Local Business" id="" value="Local Business">Local Business</td>
+                    <td><input type="checkbox" name="Small Business" id="" value="Small Business">Small Business</td>
+                    <td><input type="checkbox" name="Medium Business" id="" value="Medium Business">Medium Business</td>
+                </tr>
+                <tr>
+                    <td><label for="">Navigation Bar Items</label></td>
+                    <td><input type="checkbox" name="About" id="" value="About">About</td>
+                    <td><input type="checkbox" name="FAQ" id="" value="FAQ">FAQ</td>
+                    <td><input type="checkbox" name="User Guide" id="" value="User Guide">User Guide</td>
+                </tr>
+                <tr>
+                    <td><label for=""></label></td>
+                    <td><input type="checkbox" name="Forum" id="" value="Forum">Forum</td>
+                    <td><input type="checkbox" name="Blog" id="" value="Blog">Blog</td>
+                    <td><input type="checkbox" name="Pricing" id="" value="Pricing">Pricing</td>
+                </tr>
+                <tr>
+                <tr>
+                    <td><label for="">More Items:</label></td>
+                    <td colspan="2"><input type="text" name="moreItems" placeholder="Additional items"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Additional Services</label></td>
+                    <td><input type="checkbox" name="Banner Design" id="" value="Banner Design">Banner Design</td>
+                    <td><input type="checkbox" name="SEO" id="" value="SEO">SEO</td>
+                    <td><input type="checkbox" name="Landing Page Design" id="" value="Landing Page Design">Landing Page Design</td>
+                </tr>
+                <tr>
+                    <td><label for=""></label></td>
+                    <td><input type="checkbox" name="Video" id="" value="Video">Video</td>
+                    <td><input type="checkbox" name="Analytics" id="" value="Analytics">Analytics</td>
+                    <td><input type="checkbox" name="Adevertisement Management" id="" value="Adevertisement Management">Adevertisement Management</td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Additional Comments:</label></td>
+                    <td colspan="2"><textarea name="comments" rows="7" placeholder="Enter your comments"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
 </body>
 </html>
 
