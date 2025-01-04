@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object Fit and Position</title>
+    <style>
+        .container{
+            height: 340px;
+            width:540px;
+            border: 2px solid magenta;
+            background-color: azure;
+        }
+        img{
+            height: 340px;
+            width: 540px;
+            /* object-fit: cover; */
+            /* object-fit: cover will cover the dimentions/height& width provided for image object (will not maintain aspect ratio of the image) */
+
+            object-fit: contain;
+            /* will fill the height-width and will not maintain aspect ratio */
+            
+            /* object-position: 10px 20px; */
+            object-position: 50% 50%;
+            /* will shift the object  */
+            /* object-position: top right; */
+            /* will specify which portion to cut if the image overflows/ id bigger than the box. used with object-fill*/
+
+            /* object-fit: contain; */
+            /* will fit the image in height & width provided for image object while maintaining the image aspect ratio*/
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg" alt="">
+    </div>
+</body>
+</html>
