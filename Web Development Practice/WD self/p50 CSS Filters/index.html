@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    Note not all the filters are included please check "https://developer.mozilla.org/en-US/docs/Web/CSS/filter" for more..   <style>
+        img{
+            height: 200px;
+            /* filter: blur(10px); */
+        }
+
+        .img1{
+            filter: brightness(122%);
+        }
+        .img2{
+            filter: opacity(50%);
+        }
+        .img3{
+            filter: grayscale(10%) invert(0.9);
+            /* we can add multiple filters on an image as shown above */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+
+        <img class="img2" src="https://media.istockphoto.com/id/1399565382/photo/young-happy-mixed-race-businessman-standing-with-his-arms-crossed-working-alone-in-an-office.jpg?s=612x612&w=0&k=20&c=buXwOYjA_tjt2O3-kcSKqkTp2lxKWJJ_Ttx2PhYe3VM=" alt="">
+
+        <img class="img3" src="https://www.shutterstock.com/image-photo/headshot-portrait-happy-millennial-man-260nw-1548802709.jpg" alt="">
+    </div>
+    
+</body>
+</html>
