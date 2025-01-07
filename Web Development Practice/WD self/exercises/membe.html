@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Form</title>
+    <style>
+        fieldset{
+            background-color: rgb(184, 214, 244)
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+
+        <form>
+            <table>
+                <tr>
+                    <td>Card number:</td>
+                    <td><input type="text" ></td>
+                </tr>
+                <tr>
+                    <td>Exp. date:</td>
+                    <td>
+                        Month: 
+                        <select>
+                            <option value="Jan">Jan</option>
+                            <option value="Feb">Feb</option>
+                            <option value="Mar">Mar</option>
+                            <option value="Apr">Apr</option>
+                            <option value="May">May</option>
+                            <option value="Jun">Jun</option>
+                            <option value="Jul">Jul</option>
+                            <option value="Aug">Aug</option>
+                            <option value="Sep">Sep</option>
+                            <option value="Oct">Oct</option>
+                            <option value="Nov">Nov</option>
+                            <option value="Dec">Dec</option>
+                        </select>
+                        Year: 
+                        <select>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3-digit security code:</td>
+                    <td><input type="number" placeholder="On the back of the card"></td>
+                </tr>
+                <tr>
+                    <td>Name on card:</td>
+                    <td><input type="text" ></td>
+                </tr>
+                <tr>
+                    <td>Billing Address:</td>
+                    <td><input type="text" ></td>
+                </tr>
+                <tr>
+                    <td>City:</td>
+                    <td><input type="text" ></td>
+                </tr>
+                <tr>
+                    <td>State:</td>
+                    <td><input type="text" ></td>
+                </tr>
+                <tr>
+                    <td>Zip:</td>
+                    <td><input type="text"></td>
+                </tr>
+                
+            </table>
+        </form>
+    </fieldset>
+    <table>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button type="submit">Submit Member Application</button>
+                <button type="reset" class="reset">Reset Form</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
