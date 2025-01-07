@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts and its features in HTML</title>
+    <!-- to add a font without using style tag google font select a font > get font > get embed code > select link to get above link to add in <head> of HTML add it as font family in required section ex: h1,p -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+        /* google font select a font >get font > get embed code > select import to get above link to add in style tag then add it as font family in required section ex: h1,p */
+        h1{
+            text-align: center;
+            /* will align text as given */
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /* text-transform: uppercase; 
+            can be used to transform text to uppercase, lowercase and capitalize*/
+            
+        }
+        p{
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            font-family: "Montserrat", serif;
+            /* various fonts can be applied */
+            font-style: italic;
+            /* applies font style */
+            font-weight: 500;
+            /* changes thickness of text works similar to bold */
+            text-decoration: underline;
+            /* (underlines text can also use other decorations such as overline) */
+            text-decoration-color: aqua;
+            /* will change the color of text-decoration applied */
+            text-decoration-style: dashed;
+            /* will change the style of text-decoration */
+            text-decoration-thickness: 6px;
+            /* will change the thicness of text-decoration */
+            text-indent: 30px;
+            /* will add 30px at the start of the paragraph */
+            font-size: 20px;
+            /* size of font */
+            line-height: 2;
+            /* size between two lines */
+            /* letter-spacing: 10px; */
+            /* used to increase spacing between each character not used often */
+        }
+        .lorem{
+            border: 2px solid red; 
+            /* will add box border 2px thick */
+            width:145px;
+            word-break: break-all;
+            /* will break all the words going out of th box border and shifts them to the next line  */
+            /* width of the box */
+            /* text-overflow:ellipsis; */
+            /* if text overflowing from box is hidden then above comand applies the style or way in which it is done*/
+            /* overflow: hidden; */
+            /* hides text overflowing from the box */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Fonts</h1>
+
+        <p>This is regarding Fonts</p>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quia distinctio molestiae dolorum voluptatum omnis, vero quae dicta nulla perferendis perspiciatis. Doloribus, fugit.</p>
+    </div>
+</body>
+</html>
