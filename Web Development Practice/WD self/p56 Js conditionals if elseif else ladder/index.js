@@ -29,3 +29,16 @@ else{
 // else{
 //     console.log("You cannot drive")
 // }
+
+a=6;
+b=8;
+
+let c = a > b ? (a-b) : (b-a);
+
+/* Tanslates to :
+if (a>b){
+let c = a-b;
+}
+else{
+let c = b-a;
+} */
