@@ -39,3 +39,11 @@ delete a[2]
 console.log(a)
 console.log(typeof(a[2]))
 //will display type of empty index
+
+let numbers =[1, 2, 3, 4, 5]
+// numbers.splice(1,3)
+// console.log(numbers)
+// will delete index 1,2,3 and will display remaining
+numbers.splice(1,3,222,333)
+console.log(numbers)
+// will insert 222,333 in indexes of deleted places
