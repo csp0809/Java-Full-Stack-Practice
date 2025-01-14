@@ -1,0 +1,73 @@
+#p1{
+    border-style: double;
+    border-color: black;
+    border-width: 5px;
+}
+#p2{
+    border-style: dotted;
+    border-color: blue;
+    border-width: 10px;
+}
+#p3{
+    border-style: solid;
+    border-color: cyan;
+    border-width: 5px;
+}
+#p4{
+    border-style: dashed;
+    border-color: pink;
+    border-width: 5px;
+}
+#p5{
+    border-style: groove;
+    border-color: palegreen;
+    border-width: 5px;
+}
+#p6{
+    border-style: ridge;
+    border-color: skyblue;
+    border-width: 5px;
+}
+#p7{
+    border-style: inset;
+    border-color: crimson;
+    border-width: 10px;
+}
+#p8{
+    border-style: outset;
+    border-color: blueviolet;
+    border-width: 10px;
+}
+#p9{
+    /* Css on each side of the box  */
+    border-top-style: double;
+    border-bottom-style: dashed;
+    border-left-style: solid;
+    border-right-style: dotted;
+
+    border-bottom-color: aqua;
+    border-top-color: tomato;
+    border-left-color: teal;
+    border-right-color: red;
+    
+    border-width: 4px;
+    border-radius: 10px;
+}
+#p10{
+    border: dashed orange 6px;
+    /* we can write border properties in this way to make it compact */
+}
+
+#p11{ 
+    /* Box model implementation */
+    border-style: double;
+    border-color: black;
+    border-width: 5px;
+
+    height: 200px;
+    width: 400px;
+    padding: 20px;
+    margin: 40px;
+    /* we can specify margin and padding for each side specifically as well*/
+
+}
