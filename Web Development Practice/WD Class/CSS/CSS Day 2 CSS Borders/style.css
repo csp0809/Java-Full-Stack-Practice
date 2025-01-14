@@ -69,5 +69,89 @@
     padding: 20px;
     margin: 40px;
     /* we can specify margin and padding for each side specifically as well*/
+}
 
+#p11{ 
+    /* Box model implementation */
+    border-style: double;
+    border-color: black;
+    border-width: 5px;
+
+    height: 200px;
+    width: 400px;
+    padding: 20px;
+    margin: 40px;
+    /* we can specify margin and padding for each side specifically as well*/
+}
+
+#p12{ 
+    /* Box model implementation */
+    border-style: double;
+    border-color: black;
+    border-width: 5px;
+
+    height: 200px;
+    width: 400px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 50px;
+
+    margin-top: 20px;
+    margin-bottom: 40px ;
+    margin-left: 30px;
+    margin-right: 50px;  
+}
+
+
+/* CSS text properties */
+#p13{ 
+    text-align: right;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: brown;
+    text-shadow: 2px 2px;
+    letter-spacing: 4px;
+    word-spacing: 20px
+}
+#p14{ 
+    text-align: left;
+    text-decoration: line-through;
+    text-transform: lowercase;
+    /* color: olive;
+    text-shadow: 2px 2px;
+    letter-spacing: 4px;
+    word-spacing: 20px */
+}
+#p15{ 
+    text-align: center;
+    text-decoration: overline;
+    text-decoration-style: wavy;
+    text-transform: capitalize;
+    color: green;
+    text-shadow: 2px 0px;
+    letter-spacing: 2px;
+    word-spacing: 20px
+}
+#p16{ 
+    text-align: justify;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style: wavy;
+    text-transform: uppercase;
+    color: palevioletred;
+    text-shadow: 0px 2px;
+    letter-spacing: 4px;
+    word-spacing: 10px
+}
+
+#p17{
+    height: 400px;
+    width: 100;
+    background-color: antiquewhite;
+    background-image:url(https://cdn.pixabay.com/photo/2016/04/20/21/17/png-1342113_960_720.png) ;
+
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
 }

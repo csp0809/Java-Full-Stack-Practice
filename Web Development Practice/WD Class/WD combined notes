@@ -685,3 +685,336 @@ Sign Up form
 </body>
 </html>
 
+
+Day 7 09/01/2025
+
+CSS
+
+What is CSS
+CSS stands for Cascading Style Sheets
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+CSS saves a lot of work. It can control the layout of multiple web pages all at once
+External stylesheets are stored in CSS files.
+CSS Syntax
+CSS selector
+ 
+Ex:
+h1{
+color: blue;
+font-size:12px;
+}
+The selector points to the HTML element you want to style.
+The declaration block contains one or more declarations separated by semicolons.
+
+CSS element Selector
+The element selector selects HTML elements based on the element name.
+
+Example
+Here, all <p> elements on the page will be center-aligned, with a red text color: 
+p {
+  text-align: center;
+  color: red;
+}
+
+Two types:
+•	ID selector: To apply individual style to element ID selector is used.
+•	Class selector: To apply style to a group of element ID selector is used.
+
+
+CSS ID Selector
+The id selector uses the id attribute of an HTML element to select a specific element.
+The id of an element is unique within a page, so the id selector is used to select one unique element!
+To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+Example
+The CSS rule below will be applied to the HTML element with id="para1": 
+#para1 {
+  text-align: center;
+  color: red;
+}
+
+CSS CLASS Selector
+The class selector selects HTML elements with a specific class attribute.
+To select elements with a specific class, write a period (.) character, followed by the class name.
+Example
+In this example all HTML elements with class="center" will be red and center-aligned: 
+.center {
+ text-align: center;
+ color: red;
+}
+
+Universal Selector
+The universal selector (*) selects all HTML elements on the page.
+Example
+The CSS rule below will affect every HTML element on the page: 
+* {
+  text-align: center;
+  color: blue;
+}
+Three Ways to Insert CSS
+There are three ways of inserting a style sheet:
+External CSS (Has the lowest priority amongst three)
+Internal CSS
+Inline CSS (Has the highest priority amongst three)
+
+External CSS
+With an external style sheet, you can change the look of an entire website by changing just one file!
+Each HTML page must include a reference to the external style sheet file inside the <link> element, inside the head section.
+Internal CSS
+An internal style sheet may be used if one single HTML page has a unique style.
+The internal style is defined inside the <style> element, inside the head section.
+Inline CSS
+An inline style may be used to apply a unique style for a single element.
+To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+
+Day 8 14/01/2025
+CSS Borders 
+Style: The border-style property specifies what kind of border to display.
+dotted - Defines a dotted border
+dashed - Defines a dashed border
+solid - Defines a solid border
+double - Defines a double border
+groove - Defines a 3D grooved border. The effect depends on the border-color value
+ridge - Defines a 3D ridged border. The effect depends on the border-color value
+inset - Defines a 3D inset border. The effect depends on the border-color value
+outset - Defines a 3D outset border. The effect depends on the border-color value
+none - Defines no border
+hidden - Defines a hidden border
+we can also give each side of border a different style.
+
+Width: The border-width property specifies the width of the four borders.(i.e. top, bottom left, right borders)
+Color: The border-color property is used to set the color of the four borders.
+The color can be set by:
+•	name - specify a color name, like "red"
+•	HEX - specify a HEX value, like "#ff0000"
+•	RGB - specify a RGB value, like "rgb(255,0,0)"
+•	HSL - specify a HSL value, like "hsl(0, 100%, 50%)"
+•	transparent
+Note: We can write “border: dashed orange 6px;” to make the code compact
+
+The CSS Box Model
+The CSS box model is a box that wraps around every HTML element. It consists of: content, padding, borders and margins. The image below illustrates the box model:
+ 
+Explanation of the different parts:
+•	Content - The content of the box, where text and images appear
+•	Padding - Clears an area around the content. The padding is transparent
+•	Border - A border that goes around the padding and content
+•	Margin - Clears an area outside the border. The margin is transparent
+The box model allows us to add a border around elements, and to define space between elements. 
+
+CSS Text
+Text Color and Background Color: changes color of text and background of the text
+Text Alignment: aligns text to the left, right, centre, Justify of screen
+Text Decoration: underline, overline, linethrough can be applied we can also change the color and style of these decorations as well
+Text Transformation
+Text Spacing
+Text Shadow
+All of this is shown in example
+
+CSS Backgrounds
+The CSS background properties are used to add background effects for elements.
+following CSS background properties:
+•	background-color: changes color of background
+•	background-image: we can add an image to the background
+•	background-repeat : if the image is small in size compared to screen it can be repeated to cover the whole screen. We can even specify relative axis to which we want the image to be repeated.
+•	background-attachment: its either fixed (does not move and stays in the same place) or scroll (moves as we scroll the webpage
+•	background-position: to set position of background (right-top, left-bottom, centre, etc.
+
+Please check the example by running it that will in help understanding all the properties mentioned
+Example :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p id="p1">Welcome To CSS Lecture</p>
+    <p id="p2">Welcome To CSS Lecture</p>
+    <p id="p3">Welcome To CSS Lecture</p>
+    <p id="p4">Welcome To CSS Lecture</p>
+    <p id="p5">Welcome To CSS Lecture</p>
+    <p id="p6">Welcome To CSS Lecture</p>
+    <p id="p7">Welcome To CSS Lecture</p>
+    <p id="p8">Welcome To CSS Lecture</p>
+    <p id="p9">Welcome To CSS Lecture
+        <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum rerum, aliquid vitae laboriosam saepe eligendi suscipit, atque consectetur placeat dolorem alias nostrum necessitatibus!
+    </p>
+    <p id="p10">Welcome To CSS Lecture
+        <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum rerum, aliquid vitae laboriosam saepe eligendi suscipit, atque consectetur placeat dolorem alias nostrum necessitatibus!
+    </p>
+
+    <p id="p11">CSS Box Model </p>
+    <p id="p12">CSS Box Model with specific margin and padding </p>
+
+    <p id="p13">Welcome To CSS Lecture</p>
+    <p id="p14">Welcome To CSS Lecture</p>
+    <p id="p15">Welcome To CSS Lecture</p>
+    <p id="p16">Welcome To CSS Lecture</p>
+    
+    <div id="p17">
+
+    </div>
+</body>
+</html>
+
+CSS 
+#p1{
+    border-style: double;
+    border-color: black;
+    border-width: 5px;
+}
+#p2{
+    border-style: dotted;
+    border-color: blue;
+    border-width: 10px;
+}
+#p3{
+    border-style: solid;
+    border-color: cyan;
+    border-width: 5px;
+}
+#p4{
+    border-style: dashed;
+    border-color: pink;
+    border-width: 5px;
+}
+#p5{
+    border-style: groove;
+    border-color: palegreen;
+    border-width: 5px;
+}
+#p6{
+    border-style: ridge;
+    border-color: skyblue;
+    border-width: 5px;
+}
+#p7{
+    border-style: inset;
+    border-color: crimson;
+    border-width: 10px;
+}
+#p8{
+    border-style: outset;
+    border-color: blueviolet;
+    border-width: 10px;
+}
+#p9{
+    /* Css on each side of the box  */
+    border-top-style: double;
+    border-bottom-style: dashed;
+    border-left-style: solid;
+    border-right-style: dotted;
+
+    border-bottom-color: aqua;
+    border-top-color: tomato;
+    border-left-color: teal;
+    border-right-color: red;
+    
+    border-width: 4px;
+    border-radius: 10px;
+}
+#p10{
+    border: dashed orange 6px;
+    /* we can write border properties in this way to make it compact */
+}
+
+#p11{ 
+    /* Box model implementation */
+    border-style: double;
+    border-color: black;
+    border-width: 5px;
+
+    height: 200px;
+    width: 400px;
+    padding: 20px;
+    margin: 40px;
+    /* we can specify margin and padding for each side specifically as well*/
+}
+
+#p11{ 
+    /* Box model implementation */
+    border-style: double;
+    border-color: black;
+    border-width: 5px;
+
+    height: 200px;
+    width: 400px;
+    padding: 20px;
+    margin: 40px;
+    /* we can specify margin and padding for each side specifically as well*/
+}
+
+#p12{ 
+    /* Box model implementation */
+    border-style: double;
+    border-color: black;
+    border-width: 5px;
+
+    height: 200px;
+    width: 400px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 50px;
+
+    margin-top: 20px;
+    margin-bottom: 40px ;
+    margin-left: 30px;
+    margin-right: 50px;  
+}
+
+/* CSS text properties */
+#p13{ 
+    text-align: right;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: brown;
+    text-shadow: 2px 2px;
+    letter-spacing: 4px;
+    word-spacing: 20px
+}
+#p14{ 
+    text-align: left;
+    text-decoration: line-through;
+    text-transform: lowercase;
+    /* color: olive;
+    text-shadow: 2px 2px;
+    letter-spacing: 4px;
+    word-spacing: 20px */
+}
+#p15{ 
+    text-align: center;
+    text-decoration: overline;
+    text-decoration-style: wavy;
+    text-transform: capitalize;
+    color: green;
+    text-shadow: 2px 0px;
+    letter-spacing: 2px;
+    word-spacing: 20px
+}
+#p16{ 
+    text-align: justify;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style: wavy;
+    text-transform: uppercase;
+    color: palevioletred;
+    text-shadow: 0px 2px;
+    letter-spacing: 4px;
+    word-spacing: 10px
+}
+
+#p17{
+    height: 400px;
+    width: 100;
+    background-color: antiquewhite;
+    background-image:url(https://cdn.pixabay.com/photo/2016/04/20/21/17/png-1342113_960_720.png) ;
+
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
+
