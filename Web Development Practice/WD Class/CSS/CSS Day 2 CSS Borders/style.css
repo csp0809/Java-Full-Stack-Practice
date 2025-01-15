@@ -96,15 +96,17 @@
     padding-bottom: 20px;
     padding-left: 40px;
     padding-right: 50px;
+    /* space between element and border */
 
     margin-top: 20px;
     margin-bottom: 40px ;
     margin-left: 30px;
     margin-right: 50px;  
+    /* space after border */
 }
 
 
-/* CSS text properties */
+/* CSS text properties p13-p16 */
 #p13{ 
     text-align: right;
     text-decoration: underline;
@@ -112,7 +114,9 @@
     color: brown;
     text-shadow: 2px 2px;
     letter-spacing: 4px;
+    /* spacing between individual letters */
     word-spacing: 20px
+    /* spacing between words */
 }
 #p14{ 
     text-align: left;
@@ -148,10 +152,15 @@
 #p17{
     height: 400px;
     width: 100;
+    /* height and width of background image */
     background-color: antiquewhite;
     background-image:url(https://cdn.pixabay.com/photo/2016/04/20/21/17/png-1342113_960_720.png) ;
+    /* background image */
 
     background-repeat: no-repeat;
+    /* means background image will not repeat */
     background-position: right top;
+    /* position of the background image */
     background-attachment: fixed;
+    /* will stay in fi */
 }
