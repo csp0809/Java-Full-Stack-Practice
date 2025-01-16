@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        font-family: cursive;
+      }
+      img{
+        position: relative;
+        /* position relative to the position of container (in this case div) */
+        height: 100px;
+        width: 100px;
+        float: right;
+        /* will be placed to the right */
+        border: solid maroon;
+      }
+      div{
+        height: 300px;
+        width: 750px;
+        border: dashed orangered;
+      }
+      p{
+        color: rgb(101, 208, 235);
+      }
+      #i1{
+        position: absolute;
+        /* CSS property that allows elements to be positioned based on an absolute point on the page, relative to its parent element */
+        z-index: -1;
+        /* overlap order -ve means behind +ve means to the front */
+        float: left;
+        /* will be placed to the left */
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="pexels-george-desipris-792381.jpg">
+        <img src="pexels-kowalievska-1170986.jpg"><br>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, voluptatem tenetur. Quos harum odio reprehenderit culpa odit ratione? Labore debitis provident neque aspernatur impedit dignissimos error fuga! Fugit optio quae eum ea sunt nam laborum facere, voluptatum voluptate nulla commodi. Blanditiis velit ullam quisquam nisi! Eius id libero recusandae! Voluptates consectetur nisi molestiae dolores modi quos sed itaque maxime, libero, sit natus hic dolore corrupti rem?</p>
+      
+      </div>
+      
+      <p><img  id="i1" src="pexels-george-desipris-792381.jpg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus reprehenderit consequuntur deleniti adipisci expedita animi, debitis voluptatum, incidunt excepturi, asperiores provident doloribus labore reiciendis cupiditate eum. Et ducimus eius culpa?</p>
+</body>
+</html>

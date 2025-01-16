@@ -1028,3 +1028,52 @@ CSS
 
 
 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.d1 {
+  display: inline;
+  background-color: aquamarine;
+    border: 4px solid black;
+    height: 50px;
+    width: 50px;
+}
+.d2{
+  display: block;
+}
+.d3{
+    display: inline-block;
+    background-color: aquamarine;
+    border: 4px solid black;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+   
+}
+</style>
+</head>
+<body>
+
+<p>Display a list of links as a horizontal menu:</p>
+
+<ul>
+  <li class="d1" ><a  href="/html/default.asp" target="_blank">HTML</a></li>
+  <li class="d1"><a  href="/css/default.asp" target="_blank">CSS</a></li>
+  <li class="d1" ><a href="/js/default.asp" target="_blank">JavaScript</a></li>
+</ul>
+<h1>Display links as block elements</h1>
+<a class="d2" href="/html/default.asp" target="_blank">HTML</a>
+<a class="d2" href="/css/default.asp" target="_blank">CSS</a>
+<a class="d2" href="/js/default.asp" target="_blank">JavaScript</a>
+
+<p>Display a list of links as a horizontal menu:</p>
+
+<ul>
+  <li class="d3" ><a  href="/html/default.asp" target="_blank">HTML</a></li>
+  <li class="d3"><a  href="/css/default.asp" target="_blank">CSS</a></li>
+  <li class="d3" ><a href="/js/default.asp" target="_blank">JavaScript</a></li>
+</ul>
+
+</body>
+</html>
