@@ -7,8 +7,26 @@
 </head>
 <body>
     <div class="container">
-        <div class="box">Hey I am a box</div>
-        <div class="box">Hey I am a box</div>
+        <div class="box" style="display: flex;" data-createdby="Chaitanya" data-conceptby="Git">Hey I am a box</div>
+        <div class="box" >Hey I am a box</div>
+        <!-- we can use data- attribute to add an custm attribute without any errors ex: data-createdby="Chaitanya" -->
     </div>
 </body>
 </html>
+
+
+<!-- comands Used in console/ terminal
+document.querySelector(".box").hasAttribute("style")
+true
+document.querySelector(".box").getAttribute("style")
+'display: flex;'
+document.querySelector(".box").setAttribute("style","display:inline")
+undefined
+document.querySelector(".box").attributes
+NamedNodeMap {0: class, 1: style, class: class, style: style, length: 2}
+document.querySelector(".box").removeAttribute("style")
+undefined 
+
+
+document.designMode = "on"
+with the help of this comand you can edit content of any website temporarily-->
