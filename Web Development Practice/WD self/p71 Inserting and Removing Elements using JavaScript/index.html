@@ -10,7 +10,30 @@
         <div class="box" style="display: flex;" data-createdby="Chaitanya" data-conceptby="Git">Hey I am a box</div>
         <div class="box" >Hey I am a box</div>
         <!-- we can use data- attribute to add an custm attribute without any errors ex: data-createdby="Chaitanya" -->
+        
     </div>
+    <script>
+        // let div =document.createElement("div")
+        // div.innerHTML = "I have been inserted  <b>By Chaitanya</b>"
+        // div.setAttribute("class", "created");
+        // document.querySelector(".container").append(div);
+        // document.querySelector(".container").before(div);
+        // document.querySelector(".container").after(div);
+        // document.querySelector(".container").prepend(div);
+        // document.querySelector(".container").replaceWith(div);
+
+
+        let cont = document.querySelector(".container")
+        // cont.insertAdjacentHTML("afterend", "<b> I am inserted </b>")
+        // cont.insertAdjacentHTML("afterbegin", "<b> I am inserted </b>")
+        // cont.insertAdjacentHTML("beforebegin", "<b> I am inserted </b>")
+        cont.insertAdjacentHTML("afterbegin", "<b> I am inserted </b>")
+
+        // .insertAdjacentHTML - for HTML
+        // .insertAdjacentText - for Text
+        // .insertAdjacentElement - for Element
+        
+    </script>
 </body>
 </html>
 
@@ -30,3 +53,32 @@ undefined
 
 document.designMode = "on"
 with the help of this comand you can edit content of any website temporarily-->
+
+
+<!-- to remove an element
+document.querySelector(".box").remove()
+
+document.querySelector(".box").classList.remove("Chaitanya")
+undefined
+
+document.querySelector(".container").classList.remove("Chaitanya")
+ -->
+
+<!-- to display class list and className 
+document.querySelector(".box").classList
+DOMTokenList ['box', value: 'box']0: "box"length: 1value: "box"[[Prototype]]: DOMTokenList
+document.querySelector(".box").className
+'box' -->
+
+<!-- to add a class
+document.querySelector(".box").classList.add("Chaitanya")
+undefined
+document.querySelector(".container").classList.add("Chaitanya")
+undefined -->
+
+<!-- .toggle - will add class if its not present and will delete if already present
+document.querySelector(".container").classList.toggle("Chaitanya")
+true
+document.querySelector(".container").classList.toggle("Chaitanya")
+false
+-->
