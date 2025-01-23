@@ -1015,7 +1015,7 @@ CSS
     width: 100;
     /* height and width of background image */
     background-color: antiquewhite;
-    background-image:url(https://cdn.pixabay.com/photo/2016/04/20/21/17/png-1342113_960_720.png) ;
+    background-image:url(https://cdn.pixabay.com/photo/2016/04/20/21/17/png-1342113_960_720.png);
     /* background image */
 
     background-repeat: no-repeat;
@@ -1026,54 +1026,183 @@ CSS
     /* will stay in fi */
 }
 
+Day 9 16/01/2025
+CSS 
+Using CSS to make Iine elements (elements which take only required space in the row and not the whole row) to block elements (elements which take whole row space irrespective of their size) and vice-versa.
 
-
+EX:
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<style>
-.d1 {
-  display: inline;
-  background-color: aquamarine;
-    border: 4px solid black;
-    height: 50px;
-    width: 50px;
-}
-.d2{
-  display: block;
-}
-.d3{
-    display: inline-block;
-    background-color: aquamarine;
-    border: 4px solid black;
-    height: 50px;
-    width: 100px;
-    text-align: center;
-   
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        .d1 {
+            display: inline;
+            /* will make elements inline. i.e. they will take only required space */
+            background-color: pink;
+            border: 4px solid black;
+            height: 50px;
+            width: 50px;
+        }
+
+        .d2 {
+            display: block;
+            /* will make an element into block element i.e. it will take whole row's space */
+        }
+
+        .d3 {
+            display: inline-block;
+            /* will make an element into Inline-block element i.e. it will take specified block space within the line */
+            background-color: pink;
+            border: 4px solid black;
+            height: 50px;
+            width: 100px;
+            text-align: center;
+            /* text alignment  */
+        }
+    </Style>
 </head>
+
 <body>
+    <p>list of links as a horizontal menu</p>
 
-<p>Display a list of links as a horizontal menu:</p>
+    <ul>
+        <li class="d1"><a href="/HTML/Day 1/Basic.html" target="_blank">HTML Basic</a></li>
+        <!--target="_blank" means after clicking the link it will open in new tab  -->
+        <li class="d1"><a href="/HTML/Day 5/Signupform.html" target="_blank">HTML Sign Up form</a></li>
+        <li class="d1"><a href="/CSS/CSS Day 2 CSS Borders/index.html" target="_blank">CSS Border</a></li>
+    </ul>
 
-<ul>
-  <li class="d1" ><a  href="/html/default.asp" target="_blank">HTML</a></li>
-  <li class="d1"><a  href="/css/default.asp" target="_blank">CSS</a></li>
-  <li class="d1" ><a href="/js/default.asp" target="_blank">JavaScript</a></li>
-</ul>
-<h1>Display links as block elements</h1>
-<a class="d2" href="/html/default.asp" target="_blank">HTML</a>
-<a class="d2" href="/css/default.asp" target="_blank">CSS</a>
-<a class="d2" href="/js/default.asp" target="_blank">JavaScript</a>
+    <h1>Displaying links as block elements</h1>
 
-<p>Display a list of links as a horizontal menu:</p>
+    <a class="d2" href="/HTML/Day 2/Basic.html" target="_blank">HTML</a>
+    <a class="d2" href="/HTML/Day 3/Tables.html" target="_blank">HTML Tables</a>
+    <a class="d2" href="/CSS/CSS Day1 Types Of CSS/cssex.html" target="_blank">CSS EXT</a>
 
-<ul>
-  <li class="d3" ><a  href="/html/default.asp" target="_blank">HTML</a></li>
-  <li class="d3"><a  href="/css/default.asp" target="_blank">CSS</a></li>
-  <li class="d3" ><a href="/js/default.asp" target="_blank">JavaScript</a></li>
-</ul>
+    <p>Display a list of links as a horizontal menu:</p>
 
+    <ul>
+        <li class="d3"><a href="https://www.w3schools.com/css" target="_blank">HTML Basic</a></li>
+        <li class="d3"><a href="/CSS/CSS Day 2 CSS Borders/index.html" target="_blank">CSS Border</a></li>
+    </ul>
 </body>
 </html>
+
+FlexBox:
+EX:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        font-family: cursive;
+      }
+      img{
+        position: relative;
+        /* position relative to the position of container (in this case div) */
+        height: 100px;
+        width: 100px;
+        float: right;
+        /* will be placed to the right */
+        border: solid maroon;
+      }
+      div{
+        height: 300px;
+        width: 750px;
+        border: dashed orangered;
+      }
+      p{
+        color: rgb(101, 208, 235);
+      }
+      #i1{
+        position: absolute;
+        /* CSS property that allows elements to be positioned based on an absolute point on the page, relative to its parent element */
+        z-index: -1;
+        /* overlap order -ve means behind +ve means to the front */
+        float: left;
+        /* will be placed to the left */
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="pexels-george-desipris-792381.jpg">
+        <img src="pexels-kowalievska-1170986.jpg"><br>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, voluptatem tenetur. Quos harum odio reprehenderit culpa odit ratione? Labore debitis provident neque aspernatur impedit dignissimos error fuga! Fugit optio quae eum ea sunt nam laborum facere, voluptatum voluptate nulla commodi. Blanditiis velit ullam quisquam nisi! Eius id libero recusandae! Voluptates consectetur nisi molestiae dolores modi quos sed itaque maxime, libero, sit natus hic dolore corrupti rem?</p>
+      
+      </div>
+      
+      <p><img  id="i1" src="pexels-george-desipris-792381.jpg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus reprehenderit consequuntur deleniti adipisci expedita animi, debitis voluptatum, incidunt excepturi, asperiores provident doloribus labore reiciendis cupiditate eum. Et ducimus eius culpa?</p>
+</body>
+</html>
+
+Images Properties:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img1 {
+
+            border-radius: 8px;
+            /* image corner radius */
+            border: 2px solid red;
+        }
+
+        .img2 {
+            display: block;
+            /* element type */
+            margin-left: auto;
+            margin-right: auto;
+            /* space on left and right of the element will be equal i.e element will be placed in centre */
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>
+        Rounded Images
+    </h1>
+    <p>Use the border-radius property to create rounded images:</p>
+
+    <img class="img1" src="pexels-kowalievska-1170986.jpg" alt="Image Cat" width="300">
+    <br><br><br><br><br>
+
+    <h2>Center an Image</h2>
+    <p>To center an image, set left and right margin to auto, and make it into a block element.</p>
+
+    <img class="img2" src="pexels-george-desipris-792381.jpg" alt="Image Tiger" style="width:50%">
+
+</body>
+
+Assignment: Make a tribute page for person of your choice.
+
+Day 10 21/01/2025
+Note: If you are having a problem go to live sever where your website is and right click > inspect > check for errors in console.
+
+Website for café, restaurant, 
+
+
+Day 10 21/01/2025
+JavaScript
+
+•	JavaScript is the programming language of the web.
+•	It can update and change both HTML and CSS.
+•	It can calculate, manipulate and validate data.
+
+
+
+
+
+
