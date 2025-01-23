@@ -7,5 +7,5 @@ btn.addEventListener("dblclick", ()=>{
 })
 
 btn.addEventListener("contextmenu", ()=>{
-    alert("Dont right click please ")
+    alert("Dont right click please  ")
 })
