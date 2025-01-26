@@ -11,5 +11,5 @@ btn.addEventListener("contextmenu", ()=>{
 })
 
 document.addEventListener("keydown", (e)=>{
-    console.log(e.key, e.keyCode)
+    console.log(e, e.key, e.keyCode)
 })
