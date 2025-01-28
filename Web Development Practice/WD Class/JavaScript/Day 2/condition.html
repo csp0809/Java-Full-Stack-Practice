@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Demo for if</h3>
+    <p id="d1"></p>
+    <h3>Demo for if</h3>
+    <p id="d2"></p>
+    <h3>Demo for if</h3>
+    <p id="d3"></p>
+    <h3>Demo for if</h3>
+    <p id="d4"></p>
+
+    <script>
+        var a=-121;
+
+        //Conditional 
+        if(a>0)
+    {
+        document.getElementById("d1").innerHTML=a+"is +ve";
+    }
+
+
+    if(a>0)
+    {
+        document.getElementById("d2").innerHTML=a+"is +ve";
+    }
+    else{
+        document.getElementById("d2").innerHTML=a+"is -ve";
+    }
+
+
+        if(a>0)
+    {
+        document.getElementById("d3").innerHTML=a+" is > 0";
+    }
+    else if(a==0)
+    {
+        document.getElementById("d3").innerHTML=a+"is 0";
+    }
+    else{
+        document.getElementById("d3").innerHTML=a+"is < 0";
+    }
+
+
+    if(a>0)
+    {
+        if(a%2==0)
+        {
+            document.getElementById("d4").innerHTML=a+" A is +ve and Even.";
+        }
+        else
+        {
+            document.getElementById("d4").innerHTML=a+" A is +ve and Odd.";
+        }
+    }
+    else if(a==0)
+    {
+        document.getElementById("d4").innerHTML=a+"is 0";
+    }
+    else{
+        if(a%2==0)
+        {
+            document.getElementById("d4").innerHTML=a+" A is -ve and Even.";
+        }
+        else
+        {
+            document.getElementById("d4").innerHTML=a+" A is -ve and Odd.";
+        }
+    }
+
+    </script>
+</body>
+</html>
