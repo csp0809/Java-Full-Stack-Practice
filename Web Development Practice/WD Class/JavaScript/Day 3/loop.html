@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Demo for For loop</h4>
+    <p id="c1"></p>
+    <h4>Demo for While loop</h4>
+    <p id="c2"></p>
+    <h4>Demo for Do While loop</h4>
+    <p id="c3"></p>
+    <h4>Demo for Break Statement</h4>
+    <p id="c4"></p>
+    <h4>Demo for Continue Statement</h4>
+    <p id="c5"></p>
+
+    <script>
+        var p=5,q=15,j=1,k=1;
+
+        for(var i=1;i<=10;i++)
+    {
+        document.getElementById("c1").innerHTML += i+"<br>";
+    }
+
+    while(j<=10)
+    {
+        document.getElementById("c2").innerHTML += p*j+" <br> "; j++;
+    }
+
+    do
+    {
+        document.getElementById("c3").innerHTML += k*q+ "<br>";
+        k++;
+    }
+    while(k<=10);
+
+
+    </script>
+</body>
+</html>
