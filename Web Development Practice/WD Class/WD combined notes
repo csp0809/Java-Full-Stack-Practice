@@ -1580,3 +1580,222 @@ EX2:
 Day 3
 30/01/25
 
+Switch Statement
+The switch statement is used to perform different actions based on different conditions.
+Syntax:
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+EX:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var d=1, day="";
+        switch(d)
+        {
+            case 0:
+                day= "Sunday";
+                break;
+                case 1:
+                day= "Monday";
+                break;
+                case 2:
+                day= "Tuesday";
+                break;
+                case 3:
+                day= "Wednesday";
+                break;
+                case 4:
+                day= "Thurday";
+                break;
+                case 5:
+                day= "Friday";
+                break;
+                case 6:
+                day= "Saturday";
+                break;
+                default : day= "Wrong day number";
+        }
+        document.getElementById("demo").innerHTML = "Today is " +day;
+    </script>
+</body>
+</html>
+
+Loop
+For Loop:
+The for statement creates a loop with 3 optional expressions:
+for (expression 1; expression 2; expression 3) {
+  // code block to be executed
+}
+Expression 1 is executed (one time) before the execution of the code block.
+Expression 2 defines the condition for executing the code block.
+Expression 3 is executed (every time) after the code block has been executed.
+
+Ex:
+for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+
+While Loop:
+The while loop loops through a block of code as long as a specified condition is true.
+Syntax:
+while (condition) {
+  // code block to be executed
+}
+
+Do While Loop
+Syntax:
+do {
+  // code block to be executed
+}
+while (condition);
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h4>Demo for For loop</h4>
+    <p id="c1"></p>
+    <h4>Demo for While loop</h4>
+    <p id="c2"></p>
+    <h4>Demo for Do While loop</h4>
+    <p id="c3"></p>
+    <h4>Demo for Break Statement</h4>
+    <p id="c4"></p>
+    <h4>Demo for Continue Statement</h4>
+    <p id="c5"></p>
+
+    <script>
+        var p = 5, q = 15, j = 1, k = 1;
+
+        for (var i = 1; i <= 10; i++) {
+            document.getElementById("c1").innerHTML += i + "<br>";
+        }
+
+        while (j <= 10) {
+            document.getElementById("c2").innerHTML += p * j + " <br> "; j++;
+        }
+
+        do {
+            document.getElementById("c3").innerHTML += k * q + "<br>";
+            k++;
+        }
+        while (k <= 10);
+
+        for (var i = 1; i <= 10; i++) {
+            if (i == 5) { break; }
+            document.getElementById("c4").innerHTML += i + " <br> ";
+        }
+
+        for (var i = 1; i <= 10; i++) {
+            if (i == 5) 
+            { continue; }
+            document.getElementById("c5").innerHTML += i+" <br>";
+        }
+    </script>
+</body>
+</html>
+
+
+JavaScript Numbers
+Check the example for further explaination.
+EX:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Numbers</h2>
+    <p>The toString() method converts a number to a string.</p>
+    <p>The toString() method can output numbers from base 2 to 16:</p>
+
+    <p id="demo"></p>
+
+    <p>The toFixed() method rounds a number to a given number of digits.</p>
+    <p>For working with money, toFixed(2) is perfect.</p>
+
+    <p id="demo1"></p>
+    <p>The valueOf() method returns a number as a number: </p>
+    <!-- only if its a number, string will not be returned -->
+
+    <p id="demo2"></p>
+    <p>The global JavaScript function parseInt() converts string to numbers:</p>
+
+    <p id="demo3"></p>
+
+    <p>The parseFLoat() method convert strings to numbers:</p>
+
+    <P id="demo4"></P>
+    <h2>JavaScript Number Object Properties</h2>
+    <p>MIN_VALUE returns the smallest number possible in JavaScript.</p>
+
+    <p id="demo5"></p>
+
+    <script>
+        var myNumber = 32;
+        document.getElementById("demo").innerHTML =
+        "32 = " + "<br>" + 
+        " Decimal " + myNumber.toString(10) + "<br>" +
+        " Hexadecimal " + myNumber.toString(16) + "<br>" +
+        " Octal " + myNumber.toString(8) + "<br>" +
+        " Binary " + myNumber.toString(2);
+        
+        var x = 9.656;
+        document.getElementById("demo1").innerHTML =
+          x.toFixed(0) + "<br>" +
+          x.toFixed(2) + "<br>" +
+          x.toFixed(4) + "<br>" +
+          x.toFixed(6);
+        
+         
+        var x1 = 123;
+        
+        document.getElementById("demo2").innerHTML = 
+          x1.valueOf() + "<br>" +
+          (123).valueOf() + "<br>" +
+          (100 + 23).valueOf();
+        
+        
+        var y="1234";
+        document.getElementById("demo3").innerHTML=parseInt(y);
+        
+        var z="1234.2356";
+        document.getElementById("demo4").innerHTML=parseFloat(z);
+        
+        var a=Number.MIN_VALUE;
+        var txt = a;
+        
+        var b=Number.MAX_VALUE;
+        txt=txt+" <br> "+b;
+        document.getElementById("demo5").innerHTML=txt;
+        </script>
+</body> 
+</html>
+
+
+

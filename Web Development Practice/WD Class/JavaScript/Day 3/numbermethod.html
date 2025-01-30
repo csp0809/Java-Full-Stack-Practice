@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Numbers</h2>
+    <p>The toString() method converts a number to a string.</p>
+    <p>The toString() method can output numbers from base 2 to 16:</p>
+
+    <p id="demo"></p>
+
+    <p>The toFixed() method rounds a number to a given number of digits.</p>
+    <p>For working with money, toFixed(2) is perfect.</p>
+
+    <p id="demo1"></p>
+    <p>The valueOf() method returns a number as a number: </p>
+    <!-- only if its a number, string will not be returned -->
+
+    <p id="demo2"></p>
+    <p>The global JavaScript function parseInt() converts string to numbers:</p>
+
+    <p id="demo3"></p>
+
+    <p>The parseFLoat() method convert strings to numbers:</p>
+
+    <P id="demo4"></P>
+    <h2>JavaScript Number Object Properties</h2>
+    <p>MIN_VALUE returns the smallest number possible in JavaScript.</p>
+
+    <p id="demo5"></p>
+
+    <script>
+        var myNumber = 32;
+        document.getElementById("demo").innerHTML =
+        "32 = " + "<br>" + 
+        " Decimal " + myNumber.toString(10) + "<br>" +
+        " Hexadecimal " + myNumber.toString(16) + "<br>" +
+        " Octal " + myNumber.toString(8) + "<br>" +
+        " Binary " + myNumber.toString(2);
+        
+        var x = 9.656;
+        document.getElementById("demo1").innerHTML =
+          x.toFixed(0) + "<br>" +
+          x.toFixed(2) + "<br>" +
+          x.toFixed(4) + "<br>" +
+          x.toFixed(6);
+        
+         
+        var x1 = 123;
+        
+        document.getElementById("demo2").innerHTML = 
+          x1.valueOf() + "<br>" +
+          (123).valueOf() + "<br>" +
+          (100 + 23).valueOf();
+        
+        
+        var y="1234";
+        document.getElementById("demo3").innerHTML=parseInt(y);
+        
+        var z="1234.2356";
+        document.getElementById("demo4").innerHTML=parseFloat(z);
+        
+        var a=Number.MIN_VALUE;
+        var txt = a;
+        
+        var b=Number.MAX_VALUE;
+        txt=txt+" <br> "+b;
+        document.getElementById("demo5").innerHTML=txt;
+        </script>
+</body> 
+</html>
