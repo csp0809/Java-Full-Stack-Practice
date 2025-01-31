@@ -1792,6 +1792,7 @@ EX:
         
         var b=Number.MAX_VALUE;
         txt=txt+" <br> "+b;
+        
         document.getElementById("demo5").innerHTML=txt;
         </script>
 </body> 
