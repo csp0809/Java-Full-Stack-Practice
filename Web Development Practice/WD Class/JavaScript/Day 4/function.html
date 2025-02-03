@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">hi how r u?</p>
+    <input type="button" onclick="msg()" value="Click Me!">
+    <!-- Function call -->
+
+    <p id="p2">hi</p>
+    <p id="p3"></p>
+
+    <script>
+        function msg(){
+            document.getElementById("p1").innerHTML="Welcome to JS!!! \n State your business";
+        }
+        function add(a,b){
+            document.getElementById("p2").innerHTML="Called in JS :"+(a+b);
+        }
+        add(10,20);
+        // function call
+
+        function mul(){
+            var x=12,y=5; //local parameters
+            return(x*y);
+        }
+        var p=mul();
+        document.getElementById("p3").innerHTML="Call with return and local arg : "+p;
+
+    </script>
+
+</body>
+</html>

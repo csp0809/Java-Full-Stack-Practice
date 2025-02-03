@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Date Methods</h3>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+    <p id="p7"></p>
+    <p id="p8"></p>
+    <p id="p9"></p>
+
+    <h3>Math Methods</h3>
+    <p id="m1"></p>
+    <p id="m2"></p>
+    <p id="m3"></p>
+    <p id="m4"></p>
+    <p id="m5"></p>
+ 
+    <script>
+        const d =new Date();
+        document.getElementById("p1").innerHTML=d;
+        document.getElementById("p2").innerHTML=d.getDate();
+        document.getElementById("p3").innerHTML=d.getDay();
+        document.getElementById("p4").innerHTML=d.getFullYear();
+        document.getElementById("p5").innerHTML=d.getHours();
+        document.getElementById("p6").innerHTML=d.getMilliseconds();
+        document.getElementById("p7").innerHTML=d.getMinutes();
+        document.getElementById("p8").innerHTML=d.getMonth()+1;
+        document.getElementById("p9").innerHTML=d.getSeconds();
+
+        document.getElementById("m1").innerHTML=Math.PI;
+        document.getElementById("m2").innerHTML=Math.min(14,15,78,23,33,-99,1,0);
+        document.getElementById("m3").innerHTML=Math.max(14,15,78,23,33,-99,1,0);
+        document.getElementById("m4").innerHTML=Math.pow(2,5);
+        document.getElementById("m5").innerHTML=Math.sqrt(25);
+
+    </script>
+</body>
+</html>
