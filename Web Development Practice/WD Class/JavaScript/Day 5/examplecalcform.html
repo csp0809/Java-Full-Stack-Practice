@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #demo {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form name="myForm" action="" onsubmit="return calculate(event)" method="get">
+        Num1: <input type="number" name="numb1"  required>
+        num2 : <input type="number" name="numb2" required>
+        <br>
+        <select name="operation">
+            <option value="add">+</option>
+            <option value="sub">-</option>
+            <option value="mul">*</option>
+            <option value="div">/</option>
+            <option value="mod">%</option>
+        </select>
+
+        <br><br>
+        <input type="submit" value="Calculate">
+    </form>
+
+    <h2 id="result"></h2>
+
+    <script>
+         function calculate(event) {
+            event.preventDefault(); // Prevent form from refreshing
+
+            let x = parseFloat(document.forms["myForm"]["numb1"].value);
+            let y = parseFloat(document.forms["myForm"]["numb2"].value);
+            let operation = document.forms["myForm"]["operation"].value;
+            let result;
+
+            switch (operation) {
+                case "add":
+                    result = x + y;
+                    break;
+                case "sub":
+                    result = x - y;
+                    break;
+                case "mul":
+                    result = x * y;
+                    break;
+                case "div":
+                    if (y === 0) {
+                        result = "Cannot divide by zero";
+                    } else {
+                        result = x / y;
+                    }
+                    break;
+                case "mod":
+                    result = x % y;
+                    break;
+                default:
+                    result = "Invalid operation";
+            }
+
+            document.getElementById('result').innerHTML = "Result: " + result;
+        }
+    </script>
+    </script>
+        
+    </body>
+    </html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>The input Element</h2>
+
+    <form action="/action_page.php">
+        <label for="Num1">Number 1:</label><br>
+        <input type="text" id="n1" name="n1"><br><br>
+        <label for="Num2">Number 2:</label><br>
+        <input type="text" id="n2" name="n2"><br><br>
+        <label for="Num1">Result:</label><br>
+        <h2 id="r1"></h2>
+        <input type="button" value="+" onclick="add()">
+        <input type="button" value="-" onclick="sub()">
+        <input type="button" value="*" onclick="mul()">
+        <input type="button" value="/" onclick="div()">
+        <input type="button" value="%" onclick="mod()">
+
+    </form>
+    <script>
+
+
+        function add() {
+            const x = parseInt(document.getElementById('n1').value);
+            const y = parseInt(document.getElementById("n2").value);
+            document.getElementById('r1').innerHTML = (x + y);
+        }
+
+        function sub() {
+            const x = parseInt(document.getElementById('n1').value);
+            const y = parseInt(document.getElementById("n2").value);
+            document.getElementById('r1').innerHTML = (x - y);
+        }
+
+        function mul() {
+            const x = parseInt(document.getElementById('n1').value);
+            const y = parseInt(document.getElementById("n2").value);
+            document.getElementById('r1').innerHTML = (x * y);
+        }
+
+        function div() {
+            const x = parseInt(document.getElementById('n1').value);
+            const y = parseInt(document.getElementById("n2").value);
+            document.getElementById('r1').innerHTML = (x / y);
+        }
+
+        function mod() {
+            const x = parseInt(document.getElementById('n1').value);
+            const y = parseInt(document.getElementById("n2").value);
+            document.getElementById('r1').innerHTML = (x % y);
+        }
+    </script>
+</body>
+
+</html>

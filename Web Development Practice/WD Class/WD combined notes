@@ -69,7 +69,7 @@ Example 1:
     </p>
 </body>
 </html>
-
+==================================================================================
 Text Formatting Elements
 
 1.	<b> - Bold text
@@ -115,6 +115,7 @@ EX:
 </body>
 </html>
 
+==================================================================================
 Day 2: 18/12/24
 HTML Links:
 HTML Links - Hyperlinks
@@ -143,7 +144,7 @@ EX:
     <img src="C:/image/X9Npn_1559738818.jpg" alt="" width="100px">
     <!-- to display image with path, sometimes it may not show this image in 
     such case we will have to go to original code file inside folder and run it from there  -->
-
+==================================================================================
 Lists
 <ul>	Defines an unordered list
 <ol>	Defines an ordered list
@@ -206,7 +207,7 @@ Lists
 </body>
 </html>
 
-
+==================================================================================
 Day 3 20/12/24
 Tables:
 HTML tables allow web developers to arrange data into rows and columns.
@@ -232,7 +233,7 @@ Groups the body content in a table
 <tfoot>
 Groups the footer content in a table
 
-
+Ex:
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -377,8 +378,7 @@ Groups the footer content in a table
     <!-- iframe is used to display page within page -->
 </body>
 </html>
-
-
+==================================================================================
 Day 4 23/12/24
 Forms:
 An HTML form is used to collect user input. The user input is most often sent to a server for processing.
@@ -441,6 +441,7 @@ Here are the different input types you can use in HTML:
 •	<input type="time">
 •	<input type="url">
 •	<input type="week">
+
 Form example:
 <!DOCTYPE html>
 <html lang="en">
@@ -537,8 +538,7 @@ Form Example 2:
 </body>
 </html>
 
-We have to complete the Academics part in this one
-
+Assignment: We have to complete the Academics part in this one
 
 <fieldset>
             <legend>Academics</legend>
@@ -582,6 +582,7 @@ We have to complete the Academics part in this one
             </table>
         </fieldset>
 Insert above code in academics fieldset
+==================================================================================
 Day 5 03/01/2025
 
 Assignment
@@ -685,9 +686,8 @@ Sign Up form
 </body>
 </html>
 
-
+==================================================================================
 Day 7 09/01/2025
-
 CSS
 
 What is CSS
@@ -750,6 +750,7 @@ The CSS rule below will affect every HTML element on the page:
   text-align: center;
   color: blue;
 }
+==================================================================================
 Three Ways to Insert CSS
 There are three ways of inserting a style sheet:
 External CSS (Has the lowest priority amongst three)
@@ -759,13 +760,15 @@ Inline CSS (Has the highest priority amongst three)
 External CSS
 With an external style sheet, you can change the look of an entire website by changing just one file!
 Each HTML page must include a reference to the external style sheet file inside the <link> element, inside the head section.
+
 Internal CSS
 An internal style sheet may be used if one single HTML page has a unique style.
 The internal style is defined inside the <style> element, inside the head section.
+
 Inline CSS
 An inline style may be used to apply a unique style for a single element.
 To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
-
+==================================================================================
 Day 8 14/01/2025
 CSS Borders 
 Style: The border-style property specifies what kind of border to display.
@@ -790,7 +793,7 @@ The color can be set by:
 •	HSL - specify a HSL value, like "hsl(0, 100%, 50%)"
 •	transparent
 Note: We can write “border: dashed orange 6px;” to make the code compact
-
+===========================================================================
 The CSS Box Model
 The CSS box model is a box that wraps around every HTML element. It consists of: content, padding, borders and margins. The image below illustrates the box model:
  
@@ -810,6 +813,7 @@ Text Spacing
 Text Shadow
 All of this is shown in example
 
+===========================================================================
 CSS Backgrounds
 The CSS background properties are used to add background effects for elements.
 following CSS background properties:
@@ -1026,6 +1030,7 @@ CSS
     /* will stay in fi */
 }
 
+===========================================================================
 Day 9 16/01/2025
 CSS 
 Using CSS to make Iine elements (elements which take only required space in the row and not the whole row) to block elements (elements which take whole row space irrespective of their size) and vice-versa.
@@ -1188,13 +1193,12 @@ Images Properties:
 
 Assignment: Make a tribute page for person of your choice.
 
-Day 10 21/01/2025
 Note: If you are having a problem go to live sever where your website is and right click > inspect > check for errors in console.
 
 Assignment: Website for café, restaurant, 
 
-
-Day 10 21/01/2025
+===========================================================================
+Day 10:  21/01/2025
 JavaScript
 
 •	JavaScript is the programming language of the web.
@@ -1330,6 +1334,7 @@ Variables declared with let have Block Scope
 Variables declared with let must be Declared before use
 Variables declared with let cannot be Redeclared in the same scope
 
+==================================================================================
 Operators
 Arithmetic Operators:
 Operator	Description
@@ -1450,8 +1455,8 @@ Ex:
 </body>
 </html>
 
-
-Day 11   28/01/25
+==================================================================================
+Day 11:   28/01/25
 EX1:
 <!DOCTYPE html>
 <html lang="en">
@@ -1576,8 +1581,8 @@ EX2:
 </body>
 </html>
 
-Day 12
-30/01/25
+===========================================================================
+Day 12: 30/01/25
 
 Switch Statement
 The switch statement is used to perform different actions based on different conditions.
@@ -1634,7 +1639,7 @@ EX:
     </script>
 </body>
 </html>
-
+===========================================================================
 Loop
 For Loop:
 The for statement creates a loop with 3 optional expressions:
@@ -1717,7 +1722,7 @@ Ex:
 </body>
 </html>
 
-
+===========================================================================
 JavaScript Numbers
 Check the example for further explaination.
 EX:
@@ -1796,7 +1801,7 @@ EX:
 </body> 
 </html>
 
-
+===========================================================================
 Day 13  3/02/2025
 
 Creating Date Objects
@@ -1826,6 +1831,55 @@ getSeconds()	Get second (0-59)
 getMilliseconds()	Get millisecond (0-999)
 getTime()	Get time (milliseconds since January 1, 1970)
 
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Date Methods</h3>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+    <p id="p7"></p>
+    <p id="p8"></p>
+    <p id="p9"></p>
+
+    <h3>Math Methods</h3>
+    <p id="m1"></p>
+    <p id="m2"></p>
+    <p id="m3"></p>
+    <p id="m4"></p>
+    <p id="m5"></p>
+ 
+    <script>
+        const d =new Date();
+        document.getElementById("p1").innerHTML=d;
+        document.getElementById("p2").innerHTML=d.getDate();
+        document.getElementById("p3").innerHTML=d.getDay();
+        document.getElementById("p4").innerHTML=d.getFullYear();
+        document.getElementById("p5").innerHTML=d.getHours();
+        document.getElementById("p6").innerHTML=d.getMilliseconds();
+        document.getElementById("p7").innerHTML=d.getMinutes();
+        document.getElementById("p8").innerHTML=d.getMonth()+1;
+        document.getElementById("p9").innerHTML=d.getSeconds();
+
+        document.getElementById("m1").innerHTML=Math.PI;
+        document.getElementById("m2").innerHTML=Math.min(14,15,78,23,33,-99,1,0);
+        document.getElementById("m3").innerHTML=Math.max(14,15,78,23,33,-99,1,0);
+        document.getElementById("m4").innerHTML=Math.pow(2,5);
+        document.getElementById("m5").innerHTML=Math.sqrt(25);
+
+    </script>
+</body>
+</html>
+
 ===========================================================================
 JavaScript Function Syntax
 A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
@@ -1849,6 +1903,44 @@ When an event occurs (when a user clicks a button)
 When it is invoked (called) from JavaScript code
 Automatically (self invoked)
 
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">hi how r u?</p>
+    <input type="button" onclick="msg()" value="Click Me!">
+    <!-- Function call -->
+
+    <p id="p2">hi</p>
+    <p id="p3"></p>
+
+    <script>
+        function msg(){
+            document.getElementById("p1").innerHTML="Welcome to JS!!! \n State your business";
+        }
+        function add(a,b){
+            document.getElementById("p2").innerHTML="Called in JS :"+(a+b);
+        }
+        add(10,20);
+        // function call
+
+        function mul(){
+            var x=12,y=5; //local parameters
+            return(x*y);
+        }
+        var p=mul();
+        document.getElementById("p3").innerHTML="Call with return and local arg : "+p;
+
+    </script>
+
+</body>
+</html>
+
 ===========================================================================
 Arrow Function
 It gets shorter! If the function has only one statement, and the statement returns a value, you can remove the brackets and the return keyword:
@@ -1857,6 +1949,36 @@ Arrow Functions Return Value by Default:
 hello = () => "Hello World!";
 
 Note: This works only if the function has only one statement.
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>JavaScript Functions</h1>
+    <h2>The Arrow Function</h2>
+
+    <P>This example shows the syntax of an Arrow function, and how to use it.</P>
+
+    <p id="demo"></p>
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+    <script>
+        let myFunction = (a,b,c) => (a+b)*c;
+        document.getElementById("demo").innerHTML = myFunction(4,5,2);
+        let hello=()=> " Hello World";
+        document.getElementById("p1").innerHTML=hello();
+
+    </script>
+</body>
+</html>
+
 ===========================================================================
 Arrays
 An array is a special variable, which can hold more than one value:
@@ -1877,4 +1999,449 @@ Accessing Array Elements
 You access an array element by referring to the index number:
 Note: Array indexes start with 0.
 [0] is the first element. [1] is the second element.
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h5>Demo For Array Creation</h5>
+    <p id="a1"></p>
+    <p id="a2"></p>
+    <h5>Demo For Array Element  Access</h5>
+    <p id="a3"></p>
+    <h5>JavaScript uses names to access object properties</h5>
+    <p id="a4"></p>
+    <h5>Array Length property</h5>
+    <p id="a5"></p>
+    <h5>The best way to loop through an array is using a standard for loop:</h5>
+    <p id="demo"></p>
+    <h5>The best way to loop through an array is using a standard for each loop:</h5> 
+    <p id="demo1"></p>
+    <h5>Demo For converting array to string using toString()</h5>
+    <p id="a6"></p>
+    <h5>Demo For converting array to string using join()</h5>
+    <p id="a7"></p>
+    <h5>Demo For pop() </h5>
+    <p id="a8"></p>
+    <H5>Array after pop function</H5>
+    <p id="a9"></p>
+    <H5>Shifting Element</H5>
+    <p><i>The shift() method removes the first element of an array  
+    
+        <p id="a10"></p>
+        <p id="a11"></p>
+    <p id="a12"></p>
+    <p id="a13"></p>
+    <p id="a14"></p>
+    <p id="a15"></p>
+    
+    <script>
+
+        var a=[10,201,30,403,507,60],i=0;
+        var txt=" ",t=" ";
+        var s=new Array("ASD","QWE","MNB");
+        
+        document.getElementById("a1").innerHTML=a;
+        
+        document.getElementById("a2").innerHTML=s;
+        document.getElementById("a3").innerText="S[2] = "+s[2];//MNB
+        
+        document.getElementById("a5").innerText="Total elements in Array 1 : "
+        +a+"  =  "+a.length;
+
+        for(i=0;i<a.length;i++)
+    {
+        if(a[i]%2==0)
+    {
+        document.getElementById("demo").innerHTML += a[i] +"    ";
+    }
+    }
+
+    document.getElementById("a6").innerHTML=s.toString();
+    document.getElementById("a7").innerHTML=s.toString("@");
+    var x=a.pop();//remove last element
+    document.getElementById("a8").innerHTML=" popped element is : "+x;
+    document.getElementById("a9").innerHTML=" Array after pop() : "+a;
+
+    document.getElementById("a10").innerHTML= a;
+    a.shift(); //removes first element
+    document.getElementById("a11").innerHTML=a;
+    document.getElementById("a12").innerHTML=a.push("ABC");
+    //adds element at the end
+    document.getElementById("a14").innerHTML= "new array is : "+a;
+    a.unshift("kjil"); //adds element at 
+    document.getElementById("a9").innerHTML="new array wiith unshift()"+a;
+
+    </script>
+</body>
+</html>
+
+===========================================================================
+Day 14: 4/02/2025
+
+Strings
+Strings are for storing text
+Strings are written with quotes
+
+Using Quotes
+A JavaScript string is zero or more characters written inside quotes.
+Strings created with single or double quotes work the same.
+There is no difference between the two.
+
+EX:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>JavaScript String Methods</h2>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p1"></p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <script>
+        let str = "Apple, Banana, Kiwi";
+        let str1 = 'Hello !!!';
+        document.getElementById("p2").innerHTML = str;
+        document.getElementById("p3").innerHTML = str1;
+        document.getElementById("p1").innerHTML = "length of string is" + str.length;
+        document.getElementById("demo").innerHTML = "Slice-> " + str.slice(-10, -6);
+        document.getElementById("demo1").innerHTML = "Substing-> " + str.substring(10, 16);
+        document.getElementById("demo2").innerHTML = "Substr-> " + str.substr(10, 5);
+        document.getElementById("demo3").innerHTML = "Replace-> " + str.replace("Apple", "Grapes");
+        document.getElementById("demo4").innerHTML = "uppercase-> " + str.toUpperCase();
+        document.getElementById("demo5").innerHTML = "lowercase-> " + str.toLowerCase();
+        document.getElementById("demo6").innerHTML = "concat-> " + str.concat(str1);
+        document.getElementById("demo7").innerHTML = "charAt-> " + str.charAt(4);
+        document.getElementById("demo8").innerHTML = "charCodeAt-> " + str.charCodeAt(4);
+
+        document.getElementById("demo9").innerHTML = "str[8]-> " + str[8];
+        let arr = str.split(",");
+        document.getElementById("demo10").innerHTML = "Arr[1] " + arr[1];
+        let str2 = "Please locate where 'locate' occurs!";
+        document.getElementById("demo11").innerHTML = "Indexof " + str2.indexOf("locate");
+        document.getElementById("demo12").innerHTML = "Last index of " + str2.lastIndexOf("locate");
+        let text = "Hello world, welcome to the universe.";
+        document.getElementById("demo13").innerHTML = "start with " + text.startsWith("Hello");
+        document.getElementById("demo14").innerHTML = " End with " + text.endsWith("universe.");
+
+    </script>
+
+</body>
+
+</html>
+
+===========================================================================
+Form Validation:
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #demo {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form name="myForm" action="" onsubmit="return validateForm()" method="get">
+        Name: <input type="text" name="fname">
+        Email : <input type="text" name="email">
+        Password: <input type="password" name="pwd">
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["fname"].value;
+            var y = document.forms["myForm"]["email"].value;
+            var z = document.forms["myForm"]["pwd"].value;
+            atpos = y.indexOf("@");
+            dotpos = y.lastIndexOf(".");
+            if (x == "") {
+
+                alert("Name must be filled out");
+                //return false;
+            }
+            else if (atpos < 1 || (dotpos - atpos < 2)) {
+                alert("Please enter correct email ID");
+
+                return false;
+            }
+            else if (z.length < 6) {
+                alert(" Not Valid pwd");
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+    <p>Please input a number between 1 and 10:</p>
+    <input id="numb">
+    <button type="button" onclick="myFunction()">Submit</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            var x, text;
+
+            // Get the value of the input field with id="numb"
+            x = document.getElementById("numb").value;
+
+            // If x is Not a Number or less than one or greater than 10
+            if (isNaN(x) || x < 1 || x > 10) {
+                text = "Input not valid";
+            } else {
+                text = "Input OK";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+</body>
+</html>
+
+Ex:2 // form validation
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="myForm" action="" onsubmit="return validateForm()" method="get">
+        Name: <input type="text" name="fname">
+        Email : <input type="text" name="email">
+        Password: <input type="password" name="pwd">
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["fname"].value;
+            var y = document.forms["myForm"]["email"].value;
+            var z = document.forms["myForm"]["pwd"].value;
+            atpos = y.indexOf("@");
+            dotpos = y.lastIndexOf(".");
+            if (x == "") {
+
+                alert("Name must be filled out");
+                //return false;
+            }
+            else if (atpos < 1 || (dotpos - atpos < 2)) {
+                alert("Please enter correct email ID");
+
+                return false;
+            }
+            else if (z.length < 6) {
+                alert(" Not Valid pwd");
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+    <p>Please input a number between 1 and 10:</p>
+    <input id="numb">
+    <button type="button" onclick="myFunction()">Submit</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            var x, text;
+
+            // Get the value of the input field with id="numb"
+            x = document.getElementById("numb").value;
+
+            // If x is Not a Number or less than one or greater than 10
+            if (isNaN(x) || x < 1 || x > 10) {
+                text = "Input not valid";
+            } else {
+                text = "Input OK";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+</body>
+</html>
+
+Ex:3 // calculator example
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>The input Element</h2>
+
+    <form action="/action_page.php">
+        <label for="Num1">Number 1:</label><br>
+        <input type="text" id="n1" name="n1"><br><br>
+        <label for="Num2">Number 2:</label><br>
+        <input type="text" id="n2" name="n2"><br><br>
+        <label for="Num1">Result:</label><br>
+        <h2 id="r1"></h2>
+        <input type="button" value="+" onclick="add()">
+        <input type="button" value="-" onclick="sub()">
+        <input type="button" value="*" onclick="mul()">
+        <input type="button" value="/" onclick="div()">
+        <input type="button" value="%" onclick="mod()">
+
+    </form>
+    <script>
+
+        function add() {
+            const x = parseInt(document.getElementById('n1').value);
+            const y = parseInt(document.getElementById("n2").value);
+            document.getElementById('r1').innerHTML = (x + y);
+        }
+
+        function sub() {
+            const x = parseInt(document.getElementById('n1').value);
+            const y = parseInt(document.getElementById("n2").value);
+            document.getElementById('r1').innerHTML = (x - y);
+        }
+
+        function mul() {
+            const x = parseInt(document.getElementById('n1').value);
+            const y = parseInt(document.getElementById("n2").value);
+            document.getElementById('r1').innerHTML = (x * y);
+        }
+
+        function div() {
+            const x = parseInt(document.getElementById('n1').value);
+            const y = parseInt(document.getElementById("n2").value);
+            document.getElementById('r1').innerHTML = (x / y);
+        }
+
+        function mod() {
+            const x = parseInt(document.getElementById('n1').value);
+            const y = parseInt(document.getElementById("n2").value);
+            document.getElementById('r1').innerHTML = (x % y);
+        }
+    </script>
+</body>
+</html>
+
+Ex:4 // calculator example using form method
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #demo {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form name="myForm" action="" onsubmit="return calculate(event)" method="get">
+        Num1: <input type="number" name="numb1"  required>
+        num2 : <input type="number" name="numb2" required>
+        <br>
+        <select name="operation">
+            <option value="add">+</option>
+            <option value="sub">-</option>
+            <option value="mul">*</option>
+            <option value="div">/</option>
+            <option value="mod">%</option>
+        </select>
+
+        <br><br>
+        <input type="submit" value="Calculate">
+    </form>
+
+    <h2 id="result"></h2>
+
+    <script>
+         function calculate(event) {
+            event.preventDefault(); // Prevent form from refreshing
+
+            let x = parseFloat(document.forms["myForm"]["numb1"].value);
+            let y = parseFloat(document.forms["myForm"]["numb2"].value);
+            let operation = document.forms["myForm"]["operation"].value;
+            let result;
+
+            switch (operation) {
+                case "add":
+                    result = x + y;
+                    break;
+                case "sub":
+                    result = x - y;
+                    break;
+                case "mul":
+                    result = x * y;
+                    break;
+                case "div":
+                    if (y === 0) {
+                        result = "Cannot divide by zero";
+                    } else {
+                        result = x / y;
+                    }
+                    break;
+                case "mod":
+                    result = x % y;
+                    break;
+                default:
+                    result = "Invalid operation";
+            }
+
+            document.getElementById('result').innerHTML = "Result: " + result;
+        }
+    </script>
+    </script>
+        
+    </body>
+    </html>
+
+
+
 

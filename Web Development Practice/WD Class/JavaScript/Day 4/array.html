@@ -50,6 +50,30 @@
         
         document.getElementById("a5").innerText="Total elements in Array 1 : "
         +a+"  =  "+a.length;
+
+        for(i=0;i<a.length;i++)
+    {
+        if(a[i]%2==0)
+    {
+        document.getElementById("demo").innerHTML += a[i] +"    ";
+    }
+    }
+
+    document.getElementById("a6").innerHTML=s.toString();
+    document.getElementById("a7").innerHTML=s.toString("@");
+    var x=a.pop();//remove last element
+    document.getElementById("a8").innerHTML=" popped element is : "+x;
+    document.getElementById("a9").innerHTML=" Array after pop() : "+a;
+
+    document.getElementById("a10").innerHTML= a;
+    a.shift(); //removes first element
+    document.getElementById("a11").innerHTML=a;
+    document.getElementById("a12").innerHTML=a.push("ABC");
+    //adds element at the end
+    document.getElementById("a14").innerHTML= "new array is : "+a;
+    a.unshift("kjil"); //adds element at 
+    document.getElementById("a9").innerHTML="new array wiith unshift()"+a;
+
     </script>
 </body>
 </html>
