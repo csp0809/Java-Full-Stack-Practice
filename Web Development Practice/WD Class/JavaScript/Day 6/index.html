@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width:100px;
+            border:solid 5px red;
+
+        }
+    </style>
+</head>
+<body id="d1" onload="changebg()">
+    <h2 onclick="this.innerHTML=new Date()">hello</h2>
+    <div onmouseover="onover(this)" onmouseout="onout(this)">hi</div>
+   <div onmousedown="Onpress(this)" onmouseup="onup(this)">welcome</div>
+    <input type="text" id="i1" onchange="upercase()">
+    
+    <script>
+        function onover(m)
+        {
+            m.innerHTML="hello";
+        }
+        function onout(m)
+        {
+            m.innerHTML="Thank You";
+        }
+function Onpress(n)
+{
+    n.innerHTML="pink";
+    n.style.backgroundColor="green";
+}
+function onupercase(n)
+{
+    n.innerHTML="Hi";
+}
+ 
+function upercase(){
+    var n=document.getElementById("i1");
+    n.value=n.value.toUpperCase();
+}
+document.getElementById("d1").style.backgroundColor="grey";
+    </script>
+</body>
+</html>
