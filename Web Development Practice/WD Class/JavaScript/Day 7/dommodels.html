@@ -1,0 +1,55 @@
+<html>
+    <head>
+<style>
+    div{
+        border: 5px solid brown;
+        height: 300px;
+        width: 400px;
+    }
+</style>
+    </head>
+    <body>
+        <p id="p1">hi</p>
+        <button onclick="fun2()">Change color</button>
+        <p class="c1"> hello</p>
+        <p class="c1">welcome </p>
+        <p class="c1">goodday </p>
+        <p>Have a nice day</p>
+        <img src="Tv.jpg" id="img1">
+        <button id="b1">Click Me!!</button>
+        <script>
+            document.getElementById("p1").innerText="IIHT";
+            var  w = document.getElementsByClassName("c1");
+            w[0].innerHTML="HTML1";
+            w[1].innerHTML="HTML2";
+            w[2].innerHTML="HTML3";
+        var x = document.getElementsByTagName("p");
+        x[4].innerHTML="Paragraph by tagname";
+    function fun1(){
+        document.getElementById("img1").src="images.png";
+    }
+    function fun12(){
+        document.getElementById("img1").src="Tv.jpg";
+    }
+document.getElementById("img1").src="images.png";
+let btn=document.getElementById("b1");
+btn.addEventListener("click",fun1);
+btn.addEventListener("dblclick",fun12);
+
+       
+        function fun2()
+        {
+        document.getElementById("p1").style.color="blue";
+        document.getElementById("p1").style.backgroundColor="pink";
+        }
+        function change()
+        {
+            document.getElementById("d1").style.backgroundColor="lightgreen";
+        }
+        
+        </script>
+        <div id="d1"> Hello </div>
+        <button onclick="change()">click here</button>
+    </body>
+</html>
+
