@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <style>
+    div {
+background-color: #D94A38;
+height: 200px;
+width: 200px;
+border: double;
+    } </style>
+    
+  </head>
+  <body onload="changecolor()" id="b1">
+  <p id="demo">Hello</p>
+  <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+  <br> <br> <br>
+  <div onmouseover="mOver(this)" onmouseout="mOut(this)" >
+Mouse Over Me</div>
+<br><br>
+Enter your name: <input type="text" id="fname" onchange="myFunction()">
+<br><br>
+<input id="bg" onkeydown="changeBackground()" placeholder="write something" style="color:#fff"> 
+<br><br>
+<input onchange="alert(this.value)" type="number"> 
+<br><br>
+<p id="t1"></p>
+<button onclick="document.getElementById('t1').innerHTML='Hello Chaitanya'">Click Me </button>
+<br><br>
+<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:#38d9d9;width:90px;height:20px;padding:40px;">
+Click Me</div> 
+<script>
+function changecolor()
+      {
+         document.getElementById("b1").style.backgroundColor="beige";
+      }
+function mOver(obj)
+ {
+  obj.innerHTML = "Thank You";
+}
+
+function mOut(obj) 
+{
+  obj.innerHTML = "Mouse over me";
+}
+  function myFunction()
+  {
+      var x = document.getElementById("fname");
+       x.value = x.value.toUpperCase();
+    }
+function changeBackground() 
+{ 
+        var x = document.getElementById('bg'); 
+        x.style.backgroundColor = "blue";
+        
+} 
+     
+function mDown(obj)
+ {
+  obj.style.backgroundColor = "pink ";
+  obj.innerHTML = "Release Me";
+}
+
+function mUp(obj) {
+  obj.style.backgroundColor="white";
+  obj.innerHTML="Thank You";
+}
+
+function disp()
+{
+  document.getElementById("t1").innerHTML="Hello Chaitanya";
+}
+            </script>
+    </body>
+</html>
