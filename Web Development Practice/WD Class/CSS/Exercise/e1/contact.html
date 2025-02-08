@@ -5,11 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Arnold Schwarzenegger</title>
     <link rel="stylesheet" href="styles.css">
+    <style>form {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    label {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    
+    input, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    button {
+        margin-top: 15px;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #575757;
+    }
+    </style>
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); 
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let message = document.getElementById("message").value;
+
+            
+            alert("Thank you for your enquiry,"+"\n"+"Your response has been recorded, " + name + "!\n\n" +
+                  "Email: " + email + "\n" +
+                  "Message: " + message);
+
+            document.getElementById("enquiryForm").reset();
+        }
+    </script>
 </head>
 <body>
 
     <div class="navbar">
-        <a href="../Tributepage.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="biography.html">Biography</a>
         <a href="career.html">Career</a>
         <a href="contact.html">Contact</a>
@@ -19,10 +68,24 @@
         <h1>Contact</h1>
         <p><strong>Email:</strong> contact@arnold.com</p>
         <p><strong>Social Media:</strong></p>
-        <ul>
-            <li><a href="https://twitter.com/Schwarzenegger" target="_blank">Twitter</a></li>
-            <li><a href="https://www.instagram.com/schwarzenegger/" target="_blank">Instagram</a></li>
+        <ul style="padding: 0;">
+            <li style="list-style-type: none;"><a href="https://twitter.com/Schwarzenegger" target="_blank">Twitter</a></li>
+            <li style="list-style-type: none; "><a href="https://www.instagram.com/schwarzenegger/" target="_blank">Instagram</a></li>
         </ul>
+
+        <h2>Enquiry Form</h2>
+        <form id="enquiryForm" onsubmit="submitForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="2" required></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
     </div>
 
     <footer>
