@@ -56,6 +56,11 @@ h2 {
     margin-top: 30px;
     color: rgb(31, 133, 223);
 }
+p{
+    width: 50vw;
+    margin: auto;
+    padding: 10PX;
+}
 
 img {
     max-width: 100%;
