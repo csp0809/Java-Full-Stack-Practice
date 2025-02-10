@@ -49,3 +49,26 @@
 // }
 
 import java.util.*;
+public class an {
+
+    public static void main(String[] args) {
+        int i,j,temp=0;
+    int no[]= new int[5];
+    Scanner sc= new Scanner(System.in);
+    System.out.println("Enter 5 nos: ");
+    for(i=0;i<5;i++){
+        no[i]=sc.nextInt();
+    }
+    for(i=0;i<5;i++){
+        for(j=i+1;j<5;j++){
+            if(no[i]>no[j]){
+                temp=no[i];
+                no[i]=no[j];
+                no[j]=temp;
+            }
+        }
+        System.out.print(no[i]);
+    }
+    }
+    
+}

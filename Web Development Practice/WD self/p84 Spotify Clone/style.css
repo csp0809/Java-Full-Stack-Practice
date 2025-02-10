@@ -65,3 +65,19 @@ body{
 .footer a{
     color: grey;
 }
+
+.nav {
+    display: flex;
+    align-items: center;  /* Vertically aligns items */
+    justify-content: space-between; /* Pushes items to left and right */
+    padding: 10px 20px;
+    background-color: #333;  /* Adjust as needed */
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.header >*{
+    padding: 20px;
+}
