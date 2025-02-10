@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="i1"></p>
+    <p id="i2"></p>
+    <p id="i3"></p>
+    <p id="i4"></p>
+
+    <script>
+        const car={
+            name:"Tata",
+            model:"Tigor",
+            color:"white",
+            disp : function(){
+                return "My car is "+this.name+" "+this.model+" having color "+this.color;
+
+            }
+        }
+        document.getElementById("i1").innerHTML =car.disp();
+        console.log(car.model);
+
+        var today = new Date();
+        class student{
+            constructor(i,n,y)
+            {
+                this.id=i;
+                this.name=n;
+                this.year=y;
+            }
+            age(){
+                return today.getFullYear()-this.year;
+            }
+            marks(m)
+            {
+                if(m<=35 && m>=0)
+                    {
+                        return "Fail"
+                    }
+                    else if(m>35 && m<=100)
+                    {
+                        return "Pass";
+                    }
+            }
+        }
+        const s1=new student(101,"Rahul", 2000);
+        document.getElementById("i2").innerHTML=s1.id+" "+s1.name+" your age is "+s1.age() + " your age is "+s1.age() + " your status is "+s1.marks(60);
+
+        const s2 =new student(142,'Raj',1996);
+        document.getElementById("i4").innerHTML=s2.id+" "+s2.name+" "+s2.age()+" "+s2.marks(66);
+    </script>
+</body>
+</html>
