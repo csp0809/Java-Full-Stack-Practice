@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Feedback Form</title>
+    <link rel="stylesheet" href="opti.css">
+</head>
+
+<body>
+    <div class="container">
+        <fieldset>
+            <h2>Training Feedback Form</h2>
+            <table>
+                <tr>
+                    <td><label><b>Training Title:</b></label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label><b>Date:</b></label></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><label><b>Trainer's Name:</b></label></td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+
+            <h3>Please rate the following aspects of the training:</h3>
+            <ul class="rating-list">
+                <li><b>Content Relevance:</b>
+                    <ul class="options">
+                        <li><input type="radio" name="Relevance"> Excellent</li>
+                        <li><input type="radio" name="Relevance"> Good</li>
+                        <li><input type="radio" name="Relevance"> Average</li>
+                        <li><input type="radio" name="Relevance"> Poor</li>
+                        <li><input type="radio" name="Relevance"> N/A</li>
+                    </ul>
+                </li>
+
+                <li><b>Teacher's Knowledge:</b>
+                    <ul class="options">
+                        <li><input type="radio" name="Knowledge"> Excellent</li>
+                        <li><input type="radio" name="Knowledge"> Good</li>
+                        <li><input type="radio" name="Knowledge"> Average</li>
+                        <li><input type="radio" name="Knowledge"> Poor</li>
+                        <li><input type="radio" name="Knowledge"> N/A</li>
+                    </ul>
+                </li>
+
+                <li><b>Teacher's Presentation Skills:</b>
+                    <ul class="options">
+                        <li><input type="radio" name="Presentation"> Excellent</li>
+                        <li><input type="radio" name="Presentation"> Good</li>
+                        <li><input type="radio" name="Presentation"> Average</li>
+                        <li><input type="radio" name="Presentation"> Poor</li>
+                        <li><input type="radio" name="Presentation"> N/A</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <label><b>What did you like most about the training?</b></label>
+            <textarea></textarea>
+
+            <label><b>What aspects of the training could be improved?</b></label>
+            <textarea></textarea>
+
+            <label><b>How will you apply what you have learned?</b></label>
+            <textarea></textarea>
+
+            <label><b>Additional Comments:</b></label>
+            <textarea></textarea>
+
+            <h3>Would you recommend this training to others?</h3>
+            <ul class="options">
+                <li><input type="radio" name="Recommend"> Yes</li>
+                <li><input type="radio" name="Recommend"> No</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <td><label><b>Participant’s Name (Optional):</b></label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label><b>Signature:</b></label></td>
+                    <td><input type="text"></td>
+                    <td><label><b>Date:</b></label></td>
+                    <td><input type="date"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+</body>
+
+</html>

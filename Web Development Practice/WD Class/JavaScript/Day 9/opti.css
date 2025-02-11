@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+fieldset {
+    width: 60%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    margin: auto;
+    border-spacing: 10px;
+}
+
+td {
+    padding: 8px;
+}
+
+input[type="text"], input[type="date"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+ul {
+    list-style-type: "▶ ";
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.options {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.options li {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    appearance: none;
+    background-color: white;
+    border: 2px solid #333;
+    border-radius: 4px;  /* Makes it square */
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    background-color: #333;
+}
+
+@media (max-width: 768px) {
+    fieldset {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+    }
+}
