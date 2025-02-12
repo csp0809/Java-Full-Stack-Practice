@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chaitanya - Developer Portfolio</title>
+    <title>Chaitanya's - Developer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
@@ -66,13 +66,24 @@
         .leftsection{
             font-size: 2.5rem;
         }
+
+        .leftsection .btn{
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
         .rightsection img{
             width: 80%;
         }
         .purple{
             color: rgb(169, 108, 226);
         }
-        
+
         .tex-grey{
             color: grey;
         }
@@ -80,13 +91,75 @@
         #element{
             color: rgb(169, 108, 226);
         }
-        .secongsection{
-            max-width: 80vw;
+        .secondsection{
+            max-width: 77vw;
             margin: auto;
+            height: 80vh;
         }
 
-        .secongsection h1{
+        .secondsection h1{
             font-size: 1.9rem;
+        }
+
+        .secondsection .box{
+            background: white;
+            width: 75vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 160px;
+        }
+
+        .image-top{
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title{
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 40px;
+        }
+
+        .vertical-desc{
+            position: relative;
+            top: 8px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer{
+            background-color: #0e0e1a;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul{
+            list-style: none;
+        }
+
+        .footer > div{
+            width: 123px;
+        }
+
+        footer .footer-rights{
+            text-align: center;
+            color: grey;
+            padding: 12px 0;
         }
     </style>
 </head>
@@ -112,17 +185,91 @@
                 
                 <div>and I am a passionate</div>
                 <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
             </div>
             <div class="rightsection">
-                <img src="bg.png" alt="">
+                <img src="./bg.png" alt="">
             </div>
         </section>
         <hr>
         <section class="secondsection">
             <span class="text-grey">What I have done so far</span>
             <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="./dev.png" alt="">
+                    <div class="verical-title">
+                        HTML Developer ()
+                    </div>
+                    <div class="vertical-desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, rerum veniam.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="./dev.png" alt="">
+                    <div class="verical-title">
+                        Node.js Developer ()
+                    </div>
+                    <div class="vertical-desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, rerum veniam.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="./dev.png" alt="">
+                    <div class="verical-title">
+                        HTML Developer ()
+                    </div>
+                    <div class="vertical-desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, rerum veniam.
+                    </div>
+                </div>
+
+                
+
+            </div>
         </section>
     </main>
+
+    <footer>
+       <div class="footer">
+            <div class="footer-first">
+                <h3>Chaitanya's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+       </div> 
+       <div class="footer-rights">
+        Copyright &#169; www.chaitanyasportfolio.com | All rights reserved
+       </div>
+    </footer>
     
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
