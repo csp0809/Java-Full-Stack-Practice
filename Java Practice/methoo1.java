@@ -1,13 +1,13 @@
 //constructor in derived class
 
-public class Methoo1 {
+public class methoo1 {
     int no1;
-    Methoo1()
+    methoo1()
     {
         no1=5;
     }
 }
-class B extends Methoo1
+class B extends methoo1
 {
     int no2;
     B()

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaitanya's - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+    <script>
+        function submitEnquiry() {
+            alert("Thank you for your enquiry. I will get back to you soon.");
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <section id="nav">
+            <nav>
+                <div class="left">Chaitanya's Portfolio</div>
+                <div class="right">
+                    <ul>
+                        <li><a href="#nav">Home</a></li>
+                        <li><a href="#secondsection">About</a></li>
+                        <li><a href="#thirdsection">Skills</a></li>
+                        <li><a href="#fourthsection">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section id="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Chaitanya</span>
+
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="./Chaitanya FSJava1.pdf" target="_blank">
+                        <button class="btn">Download Resume</button>
+                    </a>
+                    <a href="https://github.com/csp0809" target="_blank">
+                        <button class="btn">Visit Github</button>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="./bg.png" alt="">
+            </div>
+        </section>
+
+        <section id="secondsection">
+            <div class="leftsection"><span class="purple">About</span>
+                <div id="leftsectionDiv">I have a background in the Networking domain where I developed Strong problem-solving skills, Analytical skills and learnt how to be a good team player. Currently I have enrolled in a Java full stack development program and would like to transition my career into the same. </div>
+                
+            </div>
+            <div class="rightsection">
+                <img src="./dev1.png" alt="">
+            </div>
+        </section>
+
+        <section id="thirdsection">
+            <span class="text-grey">What I have done so far</span>
+            <h1>Skills</h1>
+
+            <section class="skills-container">
+                <div class="skill-box">
+                    <img src="./html.png" alt="HTML">
+                    <h3>HTML</h3>
+                    <p>Building structured and semantic web pages.</p>
+                </div>
+                <div class="skill-box">
+                    <img src="./css.png" alt="CSS">
+                    <h3>CSS</h3>
+                    <p>Styling web pages with responsive designs.</p>
+                </div>
+                <div class="skill-box">
+                    <img src="./JS.png" alt="JavaScript">
+                    <h3>JavaScript</h3>
+                    <p>Creating dynamic and interactive web applications.</p>
+                </div>
+                <div class="skill-box">
+                    <img src="./java.png" alt="Core Java">
+                    <h3>Core Java</h3>
+                    <p>Building robust applications using Java.</p>
+                </div>
+                <div class="skill-box">
+                    <img src="./advjava.png" alt="Advanced Java">
+                    <h3>Advanced Java</h3>
+                    <p>Developing enterprise applications.</p>
+                </div>
+                <div class="skill-box">
+                    <img src="./jdbc.png" alt="JDBC">
+                    <h3>JDBC</h3>
+                    <p>Connecting Java applications to databases.</p>
+                </div>
+                <div class="skill-box">
+                    <img src="./mysql.png" alt="MySQL">
+                    <h3>MySQL</h3>
+                    <p>Database management and querying.</p>
+                </div>
+            </section>
+        </section>
+
+        <section id="fourthsection">
+            <section class="content">
+                <h2>Contact Us</h2>
+                <form onsubmit="submitEnquiry(); return false;">
+                    <table>
+                        <tr>
+                            <td><label for="name">Name:</label></td>
+                            <td><input type="text" id="name" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email:</label></td>
+                            <td><input type="email" id="email" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="message">Message:</label></td>
+                            <td><textarea id="message" required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;"><button type="submit">Submit</button></td>
+                        </tr>
+                    </table>
+                    </table>
+                </form>
+            </section>
+        </section>
+
+        <a href="#nav">
+            <button class="home-button">Home</button>
+        </a>
+    </main>
+
+    <footer>
+        
+        <div class="footer-rights">
+            Copyright &#169; www.chaitanyasportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Programmer', '&amp; Web Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

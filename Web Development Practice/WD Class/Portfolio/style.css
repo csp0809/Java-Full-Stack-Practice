@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 30);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(18, 18, 62);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(153, 153, 226);
+    font-size: 1.01rem;
+
+}
+
+main hr {
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 60px 80px;
+}
+
+.left {
+    font-size: 1.8rem;
+}
+
+.firstsection {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 130px 0;
+}
+
+.firstsection>div {
+    width: 30%;
+}
+
+.leftsection {
+    font-size: 2.5rem;
+    height: 60vh;
+}
+
+#leftsectionDiv{
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+
+.leftsection .buttons {
+    padding: 50px 0;
+}
+
+.leftsection .btn {
+    padding: 12px;
+    background: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #373da9;
+    color: rgb(162, 162, 162);
+    border: 2px solid rgb(162, 162, 162);
+}
+
+.rightsection img {
+    width: 90%;
+}
+
+.purple {
+    color: rgb(169, 108, 226);
+}
+
+.tex-grey {
+    color: grey;
+}
+
+#element {
+    color: rgb(169, 108, 226);
+}
+
+.secondsection {
+    max-width: 77vw;
+    margin: auto;
+    height: 80vh;
+}
+
+.secondsection h1 {
+    font-size: 2.5rem;
+}
+
+.secondsection .box {
+    background: white;
+    width: 75vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+
+.secondsection .vertical {
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 160px;
+}
+
+.image-top {
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+
+.vertical-title {
+    position: relative;
+    top: 75px;
+    width: 150px;
+    font-size: 40px;
+}
+
+.vertical-desc {
+    position: relative;
+    top: 8px;
+    color: gray;
+    width: 150px;
+    font-size: 9px;
+}
+
+.content {
+    margin-top: 140px;
+    padding: 40px;
+    text-align: center;
+}
+
+footer {
+    background-color: #0e0e1a;
+}
+
+.footer-rights {
+    text-align: center;
+    color: grey;
+    padding: 12px 0;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .firstsection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .leftsection,
+    .rightsection img {
+        width: 100%;
+    }
+
+    .secondsection .box {
+        flex-direction: column;
+    }
+}
