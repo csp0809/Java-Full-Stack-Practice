@@ -41,8 +41,8 @@ Requires open and close
 Standalone and does not require close
 1.	Heading element/tag/content/: h1-h6   <h1>……</h1>
 2.	Paragraph <p>……</p>
-3.	<br> line break </br>
-4.	<hr> Horizontal Line </hr>
+3.	<br> line break 
+4.	<hr> Horizontal Line 
 Example 1:
 <!DOCTYPE html>
 <html lang="en">
@@ -125,7 +125,7 @@ When you move the mouse over a link, the mouse arrow will turn into a little han
 Note: A link does not have to be text. A link can be an image or any other HTML element!
 
 HTML Links - Syntax
-The HTML <a> tag defines a hyperlink. It has the following syntax:
+The HTML <a> tag i.e anchor tag defines a hyperlink. It has the following syntax:
 <a href="url">link text</a>
 
 EX:
@@ -146,10 +146,10 @@ EX:
     such case we will have to go to original code file inside folder and run it from there  -->
 ==================================================================================
 Lists
-<ul>	Defines an unordered list
-<ol>	Defines an ordered list
+<ul>	Defines an unordered list: marked using bullet points, squares, circles, etc.
+<ol>	Defines an ordered list: ordered using numbers (1,2,3), letters (A, B, C), etc.
 <li>	Defines a list item
-<dl>	Defines a description list
+<dl>	Defines a description list 
 <dt>	Defines a term in a description list
 <dd>	Describes the term in a description list
 
@@ -178,7 +178,7 @@ Lists
         <li>JAVASCRIPT</li>
         <li>BOOTSTRAP</li>
     </ul>
-    <!-- ul: unordered list, type here gives sybols like circle,square, by default it is disk -->
+    <!-- ul: unordered list, type here gives symbols like circle, square, by default it is disk/bullet points -->
 
     <dl>
         <dt>Python</dt>
@@ -187,7 +187,7 @@ Lists
         <dt>HTML</dt>
         <dd>Hypertext markup language</dd>
     </dl>
-    <!-- dl:Defines a description list
+    <!-- dl: Defines a description list
     dt: Defines a term in a description list
     dd: Describes the term in a description list
  -->
@@ -206,11 +206,9 @@ Lists
 </ol>
 </body>
 </html>
-
 ==================================================================================
-Day 3 20/12/24
+Day 3 20/12/24 
 Tables:
-HTML tables allow web developers to arrange data into rows and columns.
 Tag	Description
 <table>
 Defines a table
@@ -233,6 +231,26 @@ Groups the body content in a table
 <tfoot>
 Groups the footer content in a table
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HTML tables allow web developers to arrange data into rows and columns.
+
 Ex:
 <!DOCTYPE html>
 <html lang="en">
@@ -243,11 +261,11 @@ Ex:
 </head>
 <body>
     <table border="1" width="75%">
-        <!-- if we dont define border the table 
-         will be created wtihout any border 
-        if we dont define  width it will only take 
+        <!-- if we don’t define border the table 
+         will be created without any border 
+        if we don’t define width it will only take 
         required width-->
-        <caption><b>Employee Details/ Verticle Table</b></caption>
+        <caption><b>Employee Details/ Vertical Table</b></caption>
         <tr>
             <th>ID</th>
             <th>Name</th>
@@ -352,7 +370,7 @@ Ex:
 
     <tr>
         <th rowspan="2">City</th>
-         <!-- rowspan is used to merge columns -->
+         <!-- rowspan is used to merge rows -->
         <td>Mumbai</td>
         <td>Navi Mumbai</td>
         <td>Kharghar</td>
@@ -396,7 +414,6 @@ NEVER use GET to send sensitive data! (the submitted form data is visible in the
 The length of a URL is limited (2048 characters)
 Useful for form submissions where a user wants to bookmark the result
 GET is good for non-secure data, like query strings in Google
-
 
 Notes on POST:
 Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)
@@ -2175,7 +2192,6 @@ Ex:
 </head>
 
 <body>
-
     <form name="myForm" action="" onsubmit="return validateForm()" method="get">
         Name: <input type="text" name="fname">
         Email : <input type="text" name="email">
@@ -2441,7 +2457,7 @@ Ex:4 // calculator example using form method
         
     </body>
     </html>
-===========================================================================
+=======================================================================================
 Day 14: 06/02/25
 Events
 A JavaScript can be executed when an event occurs, like when a user clicks on an HTML element.
@@ -2498,7 +2514,7 @@ document.getElementById("d1").style.backgroundColor="grey";
 </body>
 </html>
 
-===========================================================================Day 15: 07/02/2025
+======================================================================================Day 15: 07/02/2025
 The addEventListener() method
 The addEventListener() method attaches an event handler to the specified element.
 When using the addEventListener() method, the JavaScript is separated from the HTML markup, for better readability and allows you to add event listeners even when you do not control the HTML markup.
@@ -2678,6 +2694,172 @@ btn.addEventListener("dblclick",fun12);
     </body>
 </html>
 ===========================================================================
-Day 15:
+Day 15: 10/02/25
+What is this?
+this keyword refers to an object.
+The “this” keyword refers to different objects depending on how it is used:
+In an object method, this refers to the object.
+Alone, this refers to the global object.
+In a function, this refers to the global object.
+In a function, in strict mode, this is undefined.
+In an event, this refers to the element that received the event.
+Methods like call(), apply(), and bind() can refer this to any object.
 
+Note: this is not a variable. It is a keyword. You cannot change the value of this.
+===========================================================================
+Sets:
+A JavaScript Set is a collection of unique values.
+Each value can only occur once in a Set.
+EX:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Sets</h1>
+    <p>Ypu can iterate set values with for..of:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        //set
+        const letters = new Set(["a","b","c","a","n"]);
+        //list all elements
+        let text ="";
+        for(const x of letters)
+            {
+                text += x + "<br>";
+            }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>
+===========================================================================
+Map:
+Map holds key-value pairs where the keys can be any datatype.
+A Map remembers the original insertion order of the keys.
+Ex:
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Maps</h1>
+<h2>The set() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create a Map
+const fruits = new Map();
+
+// Set Map Values
+fruits.set("apples", 500);
+fruits.set("bananas", 300);
+fruits.set("oranges", 200);
+
+let numb = fruits.get("apples");
+document.getElementById("demo").innerHTML = "There are " + numb + " apples.";
+
+</script>
+</body>
+</html>
+===========================================================================
+Objects:
+Objects are variables too. But objects can contain many values.
+
+Object literal:
+An object literal is a list of name:value pairs inside curly braces {}.
+{firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}
+
+Accessing Object properties:
+You can access object properties in two ways:
+objectName.propertyName
+objectName["propertyName"]
+JavaScript Classes:
+ECMAScript 2015, also known as ES6, introduced JavaScript Classes.
+JavaScript Classes are templates for JavaScript Objects.
+
+JavaScript Class Syntax
+Use the keyword class to create a class.
+Always add a method named constructor():
+Syntax:
+class ClassName {
+  constructor() { ... }
+}
+Note: The constructor method is called automatically when a new object is created.
+Constructor Method
+The constructor method is a special method:
+It has to have the exact name "constructor"
+It is executed automatically when a new object is created
+It is used to initialize object properties
+If you do not define a constructor method, JavaScript will add an empty constructor method.
+
+Class Methods
+Then add any number of methods.
+Syntax
+class ClassName {
+  constructor() { ... }
+  method_1() { ... }
+}
+EX:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="i1"></p>
+    <p id="i2"></p>
+    <p id="i3"></p>
+    <p id="i4"></p>
+
+    <script>
+        const car={
+            name:"Tata",
+            model:"Tigor",
+            color:"white",
+            disp : function(){
+                return "My car is "+this.name+" "+this.model+" having color "+this.color;
+            }
+        }
+        document.getElementById("i1").innerHTML =car.disp();
+        console.log(car.model);
+
+        var today = new Date();
+        class student{
+            constructor(i,n,y)
+            {
+                this.id=i;
+                this.name=n;
+                this.year=y;
+            }
+            age(){
+                return today.getFullYear()-this.year;
+            }
+            marks(m)
+            {
+                if(m<=35 && m>=0)
+                    {
+                        return "Fail"
+                    }
+                    else if(m>35 && m<=100)
+                    {
+                        return "Pass";
+                    }
+            }
+        }
+        const s1=new student(101,"Rahul", 2000);
+        document.getElementById("i2").innerHTML=s1.id+" "+s1.name+" your age is "+s1.age() + " your age is "+s1.age() + " your status is "+s1.marks(60);
+
+        const s2 =new student(142,'Raj',1996);
+        document.getElementById("i4").innerHTML=s2.id+" "+s2.name+" "+s2.age()+" "+s2.marks(66);
+    </script>
+</body>
+</html>
 
