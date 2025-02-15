@@ -24,24 +24,48 @@
 // }  }
 // }
 
+// public class Enum1 {
+
+//     enum season
+//     {
+//         summer, winter, rainy
+//     };
+//     public static void main(String[] args) {
+//         season Season=season.summer;
+//         switch (Season) {
+//             case winter:
+//                 System.out.println("Season is : Winter");
+//                 break;
+            
+//                 case summer:
+//                 System.out.println("Season is : summer");
+//                 break;
+//             default:
+//             System.out.println("Enter valid");
+//                 break;
+//         }
+//     }
+// }
+
 public class Enum1 {
 
-    enum season
-    {
+    enum season{
         summer, winter, rainy
     };
     public static void main(String[] args) {
         season Season=season.summer;
+
         switch (Season) {
-            case winter:
-                System.out.println("Season is : Winter");
+            case summer:
+                System.out.println("is summer");
                 break;
-            
-                case summer:
-                System.out.println("Season is : summer");
+
+                case winter:
+                System.out.println("is winter");
                 break;
+        
             default:
-            System.out.println("Enter valid");
+            System.out.println("enter valid");
                 break;
         }
     }
