@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chaitanya's - Developer Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+            html {
+                scroll-behavior: smooth;
+            }
+
+        body {
+            background-color: rgb(0, 0, 30);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbar-default {
+            background-color: rgb(18, 18, 62);
+            border: none;
+        }
+
+        .navbar-default .navbar-brand,
+        .navbar-default .navbar-nav>li>a {
+            color: white;
+        }
+
+        .navbar-default .navbar-nav>li>a:hover {
+            color: rgb(153, 153, 226);
+        }
+
+        .section {
+            padding: 60px 15px;
+        }
+
+        .btn-custom {
+            background: #1e2167;
+            color: white;
+            border-radius: 6px;
+        }
+
+        .btn-custom:hover {
+            background: #373da9;
+        }
+
+        .home-button {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background-color: #1e2167;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+    </style>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Chaitanya's Portfolio</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="home" class="container text-center section">
+        <h1>Hi, I'm <span class="text-primary">Chaitanya</span></h1>
+        <p>and I am a passionate <span id="element"></span></p>
+        <a href="./Chaitanya_FSJava1.pdf" target="_blank" class="btn btn-custom">Download Resume</a>
+        <a href="https://github.com/csp0809" target="_blank" class="btn btn-custom">Visit Github</a>
+    </div>
+
+    <div id="about" class="container section text-center">
+        <h2>About</h2>
+        <p>I have a background in Networking, strong problem-solving skills, and teamwork. Currently transitioning into
+            Java full-stack development.</p>
+    </div>
+
+    <div id="skills" class="container section text-center">
+        <h2>Skills</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>HTML & CSS</h4>
+                <p>Building structured and styled web pages.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>JavaScript</h4>
+                <p>Creating interactive web applications.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Java & JDBC</h4>
+                <p>Building Java applications with database integration.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="container section text-center">
+        <h2>Contact Me</h2>
+        <form onsubmit="submitEnquiry(); return false;">
+            <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" id="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom">Submit</button>
+        </form>
+    </div>
+
+    <a href="#home" class="home-button">Home</a>
+
+    <footer class="text-center" style="background-color:#0e0e1a; padding:10px;">
+        <p>Copyright &#169; www.chaitanyasportfolio.com | All rights reserved</p>
+    </footer>
+
+    <script>
+        function submitEnquiry() {
+            alert("Thank you for your enquiry. I will get back to you soon.");
+        }
+        var typed = new Typed('#element', {
+            strings: ['Programmer', '& Web Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+    
+</body>
+
+</html>
