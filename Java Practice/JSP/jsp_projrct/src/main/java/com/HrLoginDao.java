@@ -1,7 +1,7 @@
 package com;
 import java.sql.*;  
-public class LoginDao {
-	public static boolean validate(User1 bean){  
+public class HrLoginDao {
+	public static boolean validate(User bean){  
 		boolean status=false;  
 		try{  
 		    Class.forName("com.mysql.cj.jdbc.Driver");
@@ -9,11 +9,11 @@ public class LoginDao {
 		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/CompanyDB","root","8451086651");
 
 		PreparedStatement ps=con.prepareStatement(  
-				"select * from USER84510 where id=? and email=? and pass=?"); 
-		
-		ps.setString(1, bean.getEtype());
-		ps.setString(2, bean.getEemail());  
-		ps.setString(3, bean.getEpass());    
+				"SELECT * FROM USER8451 WHERE id=? AND email=? AND pass=? AND type=?");  
+		ps.setString(1, bean.getUid()); 
+		ps.setString(2, bean.getUemail());  
+		ps.setString(3, bean.getUpass());  
+		ps.setString(4, bean.getType());  
 
 		ResultSet rs=ps.executeQuery();  
 		status=rs.next();  

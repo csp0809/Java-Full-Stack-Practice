@@ -1,7 +1,7 @@
 package com;
 
 public class User1 {
-	private String action, eid, ename, eemail, epass, edept, edate, eweek1, eweek2, eweek3, eweek4;
+	private String action, eid, ename, eemail, epass, etype, edept, edate, eweek1, eweek2, eweek3, eweek4;
 
 	public String getAction() {
 		return action;
@@ -41,6 +41,14 @@ public class User1 {
 
 	public void setEpass(String epass) {
 		this.epass = epass;
+	}
+
+	public String getEtype() {
+		return etype;
+	}
+
+	public void setEtype(String etype) {
+		this.etype = etype;
 	}
 
 	public String getEdept() {
@@ -92,5 +100,4 @@ public class User1 {
 	}
 
 	
-
 }
