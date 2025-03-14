@@ -71,6 +71,33 @@
 //     }
 // }
 
+// public class Enum1 {
+
+//     enum season{
+//         summer , winter, rainy
+//     };
+
+//     public static void main(String[] args) {
+//         season Season=season.summer;
+
+//         switch (Season) {
+//             case summer:
+//                 System.out.println("it is summer");
+//                 break;
+        
+//                 case winter:
+//                 System.out.println("it is winter");
+//                 break;
+
+//             default:
+//             System.out.println("enter valid");
+//                 break;
+//         }
+//     }
+// }
+
+
+
 public class Enum1 {
 
     enum season{
