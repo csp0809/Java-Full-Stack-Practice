@@ -4,7 +4,7 @@ const page = () => {
   return (
     <div>
       Admin Login
-      <P>Login please</P>
+      <p>Login please</p>
     </div>
   )
 }
