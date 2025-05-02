@@ -100,13 +100,27 @@
 
 
 //video 129 layouts in next.js
+// import Image from 'next/image'
+
+// export default function Home() {
+//   return (
+//     <div className='homepage'>
+//       I am homepage
+//     </div>
+//   )
+// }
+
+"use client"
 import Image from 'next/image'
+import { usePathname } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
 
 export default function Home() {
+  const pathname = usePathname
+  const searchparams =useSearchParams()
   return (
-    <div className='homepage'>
-      I am homepage
+    <div>
+      Hey This is Home page and blog is{searchparams.get('blog')} and utm source is {searchparams.get('utm_source')}
     </div>
-  )
+  );
 }
-
